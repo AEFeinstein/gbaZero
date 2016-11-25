@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.6.0">
+<eagle version="7.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -970,6 +970,42 @@ digikey: SC1488-1-nD</description>
 <wire x1="-4.6228" y1="-7.62" x2="-3.9624" y2="-8.3566" width="0.2794" layer="21"/>
 <wire x1="-3.9624" y1="-8.3566" x2="-3.3782" y2="-8.89" width="0.2794" layer="21"/>
 </package>
+<package name="LINK_CONNECTOR">
+<pad name="4" x="0" y="0" drill="0.8382"/>
+<pad name="6" x="2.032" y="0" drill="0.8382"/>
+<pad name="5" x="2.032" y="2.032" drill="0.8382"/>
+<pad name="3" x="0" y="2.032" drill="0.8382"/>
+<pad name="1" x="-2.032" y="2.032" drill="0.8382"/>
+<pad name="2" x="-2.032" y="0" drill="0.8382"/>
+<wire x1="5.1054" y1="3.302" x2="4.5974" y2="2.794" width="0" layer="20" curve="90"/>
+<wire x1="4.5974" y1="2.794" x2="4.5974" y2="2.032" width="0" layer="20"/>
+<wire x1="4.5974" y1="2.032" x2="5.1054" y2="1.524" width="0" layer="20" curve="90"/>
+<wire x1="5.1054" y1="1.524" x2="5.6134" y2="2.032" width="0" layer="20" curve="90"/>
+<wire x1="5.6134" y1="2.032" x2="5.6134" y2="2.794" width="0" layer="20"/>
+<wire x1="5.6134" y1="2.794" x2="5.1054" y2="3.302" width="0" layer="20" curve="90"/>
+<wire x1="-5.1054" y1="1.524" x2="-5.6134" y2="2.032" width="0" layer="20" curve="-90"/>
+<wire x1="-5.6134" y1="2.032" x2="-5.6134" y2="2.794" width="0" layer="20"/>
+<wire x1="-5.6134" y1="2.794" x2="-5.1054" y2="3.302" width="0" layer="20" curve="-90"/>
+<wire x1="-5.1054" y1="3.302" x2="-4.5974" y2="2.794" width="0" layer="20" curve="-90"/>
+<wire x1="-4.5974" y1="2.794" x2="-4.5974" y2="2.032" width="0" layer="20"/>
+<wire x1="-4.5974" y1="2.032" x2="-5.1054" y2="1.524" width="0" layer="20" curve="-90"/>
+<pad name="GND@1" x="-5.1054" y="2.413" drill="1.016" diameter="1.524" shape="long" rot="R270"/>
+<pad name="GND@2" x="5.1054" y="2.413" drill="1.016" diameter="1.524" shape="long" rot="R270"/>
+</package>
+<package name="SHOULDER_BUTTON">
+<pad name="BIG-1" x="-4.4958" y="0" drill="0.762"/>
+<pad name="BIG-2" x="4.4958" y="0" drill="0.762"/>
+<pad name="SMALL-1" x="-2.2098" y="2.4384" drill="0.5715"/>
+<pad name="SMALL-2" x="2.2098" y="2.4384" drill="0.5715"/>
+<wire x1="-0.635" y1="-2.6162" x2="0.635" y2="-2.6162" width="0" layer="20"/>
+<wire x1="1.27" y1="-1.9812" x2="1.27" y2="0.5588" width="0" layer="20"/>
+<wire x1="0.635" y1="1.1938" x2="-0.635" y2="1.1938" width="0" layer="20"/>
+<wire x1="-1.27" y1="0.5588" x2="-1.27" y2="-1.9812" width="0" layer="20"/>
+<wire x1="-1.27" y1="0.5588" x2="-0.635" y2="1.1938" width="0" layer="20" curve="-90"/>
+<wire x1="0.635" y1="1.1938" x2="1.27" y2="0.5588" width="0" layer="20" curve="-90"/>
+<wire x1="-1.27" y1="-1.9812" x2="-0.635" y2="-2.6162" width="0" layer="20" curve="90"/>
+<wire x1="0.635" y1="-2.6162" x2="1.27" y2="-1.9812" width="0" layer="20" curve="90"/>
+</package>
 </packages>
 <symbols>
 <symbol name="PWR-SWITCH">
@@ -1293,6 +1329,25 @@ digikey: SC1488-1-nD</description>
 <pin name="GND" x="5.08" y="-10.16" visible="off" length="middle" rot="R90"/>
 <wire x1="0" y1="0" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
 </symbol>
+<symbol name="LINK_CONNECTOR">
+<pin name="1" x="-5.08" y="12.7" length="middle"/>
+<pin name="2" x="-5.08" y="7.62" length="middle"/>
+<pin name="3" x="-5.08" y="2.54" length="middle"/>
+<pin name="4" x="-5.08" y="-2.54" length="middle"/>
+<pin name="5" x="-5.08" y="-7.62" length="middle"/>
+<pin name="6" x="-5.08" y="-12.7" length="middle"/>
+<pin name="GND" x="2.54" y="-20.32" visible="off" length="middle" rot="R90"/>
+<wire x1="0" y1="-15.24" x2="0" y2="15.24" width="0.254" layer="94"/>
+<wire x1="5.08" y1="15.24" x2="5.08" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="0" y1="-15.24" x2="5.08" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="5.08" y1="15.24" x2="0" y2="15.24" width="0.254" layer="94"/>
+</symbol>
+<symbol name="SHOULDER_BUTTON">
+<pin name="1" x="-10.16" y="0" visible="off" length="middle"/>
+<pin name="2" x="10.16" y="0" visible="off" length="middle" rot="R180"/>
+<wire x1="-5.08" y1="0" x2="0" y2="2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="5.08" y2="0" width="0.254" layer="94"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="PWR_SWITCH">
@@ -1602,6 +1657,43 @@ digikey: SC1488-1-ND</description>
 <connect gate="G$1" pin="LEFT" pad="LEFT"/>
 <connect gate="G$1" pin="RIGHT" pad="RIGHT"/>
 <connect gate="G$1" pin="UP" pad="UP"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LINK_CONNECTOR">
+<gates>
+<gate name="G$1" symbol="LINK_CONNECTOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="LINK_CONNECTOR">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="G$1" pin="GND" pad="GND@1 GND@2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SHOULDER_BUTTON">
+<gates>
+<gate name="G$1" symbol="SHOULDER_BUTTON" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SHOULDER_BUTTON">
+<connects>
+<connect gate="G$1" pin="1" pad="BIG-1 SMALL-1"/>
+<connect gate="G$1" pin="2" pad="BIG-2 SMALL-2"/>
 </connects>
 <technologies>
 <technology name=""/>
