@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -2802,6 +2802,76 @@ digikey: SC1488-1-nD</description>
 <wire x1="50.1" y1="-0.5" x2="58.1" y2="-0.5" width="0.127" layer="52"/>
 <wire x1="58.1" y1="-0.5" x2="57.85" y2="0" width="0.127" layer="52"/>
 </package>
+<package name="JSTPH2">
+<description>2-Pin JST PH Series Right-Angle Connector (+/- for batteries)</description>
+<wire x1="-4" y1="3" x2="4" y2="3" width="0.2032" layer="51"/>
+<wire x1="4" y1="3" x2="4" y2="-4.5" width="0.2032" layer="51"/>
+<wire x1="-4" y1="-4.5" x2="-4" y2="3" width="0.2032" layer="51"/>
+<wire x1="3.2" y1="-2" x2="-3.2" y2="-2" width="0.2032" layer="51"/>
+<wire x1="-3.2" y1="-2" x2="-3.2" y2="-4.5" width="0.2032" layer="51"/>
+<wire x1="-3.2" y1="-4.5" x2="-4" y2="-4.5" width="0.2032" layer="51"/>
+<wire x1="4" y1="-4.5" x2="3.2" y2="-4.5" width="0.2032" layer="51"/>
+<wire x1="3.2" y1="-4.5" x2="3.2" y2="-2" width="0.2032" layer="51"/>
+<wire x1="-2.25" y1="3" x2="2.25" y2="3" width="0.2032" layer="21"/>
+<wire x1="4" y1="-0.5" x2="4" y2="-4.5" width="0.2032" layer="21"/>
+<wire x1="4" y1="-4.5" x2="3.15" y2="-4.5" width="0.2032" layer="21"/>
+<wire x1="3.15" y1="-4.5" x2="3.15" y2="-2" width="0.2032" layer="21"/>
+<wire x1="3.15" y1="-2" x2="1.75" y2="-2" width="0.2032" layer="21"/>
+<wire x1="-1.75" y1="-2" x2="-3.15" y2="-2" width="0.2032" layer="21"/>
+<wire x1="-3.15" y1="-2" x2="-3.15" y2="-4.5" width="0.2032" layer="21"/>
+<wire x1="-3.15" y1="-4.5" x2="-4" y2="-4.5" width="0.2032" layer="21"/>
+<wire x1="-4" y1="-4.5" x2="-4" y2="-0.5" width="0.2032" layer="21"/>
+<smd name="GND" x="-1" y="-3.7" dx="1" dy="4.6" layer="1"/>
+<smd name="BAT" x="1" y="-3.7" dx="1" dy="4.6" layer="1"/>
+<smd name="NC1" x="-3.4" y="1.5" dx="3.4" dy="1.6" layer="1" rot="R90"/>
+<smd name="NC2" x="3.4" y="1.5" dx="3.4" dy="1.6" layer="1" rot="R90"/>
+<text x="-2.2225" y="1.9685" size="0.8128" layer="25" ratio="18">&gt;Name</text>
+<text x="-2.2225" y="1.27" size="0.4064" layer="27" ratio="10">&gt;Value</text>
+</package>
+<package name="JSTSH2">
+<wire x1="2" y1="2.125" x2="-2" y2="2.125" width="0.127" layer="20"/>
+<wire x1="-2" y1="2.125" x2="-2" y2="-2.125" width="0.127" layer="20"/>
+<wire x1="-2" y1="-2.125" x2="2" y2="-2.125" width="0.127" layer="20"/>
+<wire x1="2" y1="-2.125" x2="2" y2="2.125" width="0.127" layer="20"/>
+<wire x1="-0.889" y1="2.159" x2="0.889" y2="2.159" width="0.2032" layer="21"/>
+<wire x1="-2.032" y1="-0.127" x2="-2.032" y2="-2.159" width="0.2032" layer="21"/>
+<wire x1="-2.032" y1="-2.159" x2="-1.143" y2="-2.159" width="0.2032" layer="21"/>
+<wire x1="2.032" y1="-0.127" x2="2.032" y2="-2.159" width="0.2032" layer="21"/>
+<wire x1="2.032" y1="-2.159" x2="1.143" y2="-2.159" width="0.2032" layer="21"/>
+<smd name="NC2" x="1.8" y="1.125" dx="1.2" dy="2" layer="1" rot="R180"/>
+<smd name="NC1" x="-1.8" y="1.125" dx="1.2" dy="2" layer="1" rot="R180"/>
+<smd name="BAT" x="0.5" y="-2.55" dx="1.35" dy="0.5" layer="1" rot="R270"/>
+<smd name="GND" x="-0.5" y="-2.55" dx="1.35" dy="0.5" layer="1" rot="R270"/>
+<text x="-1.063" y="-2.404" size="1.4224" layer="21" ratio="12" rot="R180">-</text>
+<text x="2.683" y="-2.404" size="1.4224" layer="21" ratio="12" rot="R180">+</text>
+<text x="2.794" y="1.397" size="0.8128" layer="25" ratio="18">&gt;NAME</text>
+<text x="2.794" y="0.635" size="0.4064" layer="27" ratio="10">&gt;VALUE</text>
+</package>
+<package name="JSTPH2_NOTHERMALS">
+<wire x1="-4" y1="3" x2="4" y2="3" width="0.2032" layer="51"/>
+<wire x1="4" y1="3" x2="4" y2="-4.5" width="0.2032" layer="51"/>
+<wire x1="-4" y1="-4.5" x2="-4" y2="3" width="0.2032" layer="51"/>
+<wire x1="3.2" y1="-2" x2="-3.2" y2="-2" width="0.2032" layer="51"/>
+<wire x1="-3.2" y1="-2" x2="-3.2" y2="-4.5" width="0.2032" layer="51"/>
+<wire x1="-3.2" y1="-4.5" x2="-4" y2="-4.5" width="0.2032" layer="51"/>
+<wire x1="4" y1="-4.5" x2="3.2" y2="-4.5" width="0.2032" layer="51"/>
+<wire x1="3.2" y1="-4.5" x2="3.2" y2="-2" width="0.2032" layer="51"/>
+<wire x1="-2.25" y1="3" x2="2.25" y2="3" width="0.2032" layer="21"/>
+<wire x1="4" y1="-0.5" x2="4" y2="-4.5" width="0.2032" layer="21"/>
+<wire x1="4" y1="-4.5" x2="3.15" y2="-4.5" width="0.2032" layer="21"/>
+<wire x1="3.15" y1="-4.5" x2="3.15" y2="-2" width="0.2032" layer="21"/>
+<wire x1="3.15" y1="-2" x2="1.75" y2="-2" width="0.2032" layer="21"/>
+<wire x1="-1.75" y1="-2" x2="-3.15" y2="-2" width="0.2032" layer="21"/>
+<wire x1="-3.15" y1="-2" x2="-3.15" y2="-4.5" width="0.2032" layer="21"/>
+<wire x1="-3.15" y1="-4.5" x2="-4" y2="-4.5" width="0.2032" layer="21"/>
+<wire x1="-4" y1="-4.5" x2="-4" y2="-0.5" width="0.2032" layer="21"/>
+<smd name="GND" x="-1" y="-3.7" dx="1" dy="4.6" layer="1" thermals="no"/>
+<smd name="BAT" x="1" y="-3.7" dx="1" dy="4.6" layer="1" thermals="no"/>
+<smd name="NC1" x="-3.4" y="1.5" dx="3.4" dy="1.6" layer="1" rot="R90"/>
+<smd name="NC2" x="3.4" y="1.5" dx="3.4" dy="1.6" layer="1" rot="R90"/>
+<text x="-2.2225" y="1.9685" size="0.8128" layer="25" ratio="18">&gt;Name</text>
+<text x="-2.2225" y="1.27" size="0.4064" layer="27" ratio="10">&gt;Value</text>
+</package>
 </packages>
 <symbols>
 <symbol name="TFT_CTP28_240X320_50PIN">
@@ -3228,6 +3298,16 @@ digikey: SC1488-1-nD</description>
 <text x="-20.32" y="35.56" size="1.27" layer="95" font="vector">&gt;NAME</text>
 <text x="-20.32" y="33.655" size="1.27" layer="96" font="vector">&gt;VALUE</text>
 </symbol>
+<symbol name="PINHD2">
+<wire x1="-6.35" y1="-2.54" x2="1.27" y2="-2.54" width="0.4064" layer="94"/>
+<wire x1="1.27" y1="-2.54" x2="1.27" y2="5.08" width="0.4064" layer="94"/>
+<wire x1="1.27" y1="5.08" x2="-6.35" y2="5.08" width="0.4064" layer="94"/>
+<wire x1="-6.35" y1="5.08" x2="-6.35" y2="-2.54" width="0.4064" layer="94"/>
+<text x="-6.35" y="5.715" size="1.778" layer="95">&gt;NAME</text>
+<text x="-6.35" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="1" x="-2.54" y="2.54" visible="pad" length="short" direction="pas" function="dot"/>
+<pin name="2" x="-2.54" y="0" visible="pad" length="short" direction="pas" function="dot"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="DISP_LCD_CTP28" prefix="TFT" uservalue="yes">
@@ -3633,6 +3713,45 @@ digikey: SC1488-1-ND</description>
 <connect gate="G$1" pin="SPI_MOSI" pad="19"/>
 <connect gate="G$1" pin="SPI_SCLK" pad="23"/>
 <connect gate="G$1" pin="TXD" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="JST_2PIN" prefix="CN" uservalue="yes">
+<description>JST 2-Pin Right-Angle Connector
+&lt;ul&gt;
+&lt;li&gt;PH-Series - 4UConnector: 17311&lt;/li&gt;
+&lt;li&gt;SH-Series - 4UConnector: 07278&lt;/li&gt;
+&lt;/ul&gt;</description>
+<gates>
+<gate name="G$1" symbol="PINHD2" x="2.54" y="0"/>
+</gates>
+<devices>
+<device name="" package="JSTPH2">
+<connects>
+<connect gate="G$1" pin="1" pad="GND"/>
+<connect gate="G$1" pin="2" pad="BAT"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SH2" package="JSTSH2">
+<connects>
+<connect gate="G$1" pin="1" pad="GND"/>
+<connect gate="G$1" pin="2" pad="BAT"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="PH2_NOTHERMALS" package="JSTPH2_NOTHERMALS">
+<connects>
+<connect gate="G$1" pin="1" pad="GND"/>
+<connect gate="G$1" pin="2" pad="BAT"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -10099,6 +10218,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="R23" library="microbuilder" deviceset="RESISTOR" device="0805" value="100K"/>
 <part name="R24" library="microbuilder" deviceset="RESISTOR" device="0805" value="150"/>
 <part name="GND3" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="CN1" library="gba-zero-parts" deviceset="JST_2PIN" device=""/>
+<part name="U$22" library="microbuilder" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -10287,6 +10408,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="VALUE" x="160.782" y="192.405" size="1.27" layer="96" font="vector"/>
 </instance>
 <instance part="GND3" gate="1" x="177.8" y="208.28"/>
+<instance part="CN1" gate="G$1" x="180.34" y="177.8" rot="R180"/>
+<instance part="U$22" gate="G$1" x="187.96" y="170.18"/>
 </instances>
 <busses>
 </busses>
@@ -10481,6 +10604,12 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="175.26" y1="203.2" x2="175.26" y2="210.82" width="0.1524" layer="91"/>
 <pinref part="GND3" gate="1" pin="GND"/>
 <wire x1="175.26" y1="210.82" x2="177.8" y2="210.82" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="CN1" gate="G$1" pin="1"/>
+<pinref part="U$22" gate="G$1" pin="GND"/>
+<wire x1="182.88" y1="175.26" x2="187.96" y2="175.26" width="0.1524" layer="91"/>
+<wire x1="187.96" y1="175.26" x2="187.96" y2="172.72" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="MISO" class="0">
@@ -11278,6 +11407,15 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <segment>
 <pinref part="U$44" gate="G$1" pin="B"/>
 <pinref part="R21" gate="G$1" pin="1"/>
+</segment>
+</net>
+<net name="N$19" class="0">
+<segment>
+<pinref part="U$12" gate="G$1" pin="BAT"/>
+<wire x1="203.2" y1="167.64" x2="193.04" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="193.04" y1="167.64" x2="193.04" y2="177.8" width="0.1524" layer="91"/>
+<pinref part="CN1" gate="G$1" pin="2"/>
+<wire x1="193.04" y1="177.8" x2="182.88" y2="177.8" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
