@@ -3040,13 +3040,6 @@ digikey: SC1488-1-nD</description>
 </polygon>
 <text x="-11.2" y="-3.67" size="1.016" layer="51" font="vector" ratio="15" align="center">50</text>
 <text x="11.6" y="-3.67" size="1.016" layer="51" font="vector" ratio="15" align="center">1</text>
-<wire x1="12.6" y1="2.74" x2="14.8" y2="2.74" width="0.127" layer="22"/>
-<wire x1="14.8" y1="2.74" x2="14.8" y2="1.44" width="0.127" layer="22"/>
-<wire x1="-12.7" y1="2.74" x2="-14.8" y2="2.74" width="0.127" layer="22"/>
-<wire x1="-14.8" y1="2.74" x2="-14.8" y2="1.44" width="0.127" layer="22"/>
-<wire x1="14.8" y1="-1.56" x2="14.8" y2="-2.46" width="0.127" layer="22"/>
-<wire x1="14.8" y1="-2.46" x2="-14.8" y2="-2.46" width="0.127" layer="22"/>
-<wire x1="-14.8" y1="-2.46" x2="-14.8" y2="-1.56" width="0.127" layer="22"/>
 <smd name="PAD1" x="14.35" y="-0.06" dx="2.4" dy="2.4" layer="1" roundness="25" rot="R180"/>
 <smd name="PAD2" x="-14.35" y="-0.06" dx="2.4" dy="2.4" layer="1" roundness="25" rot="R180"/>
 <smd name="2" x="11.75" y="2.65" dx="0.3" dy="1.2" layer="1"/>
@@ -3099,6 +3092,14 @@ digikey: SC1488-1-nD</description>
 <smd name="5" x="10.25" y="2.65" dx="0.3" dy="1.2" layer="1"/>
 <smd name="4" x="10.75" y="2.65" dx="0.3" dy="1.2" layer="1"/>
 <smd name="3" x="11.25" y="2.65" dx="0.3" dy="1.2" layer="1"/>
+<wire x1="-14.8" y1="-2.65" x2="-14.8" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="14.8" y1="-1.5" x2="14.8" y2="-2.65" width="0.127" layer="21"/>
+<wire x1="14.8" y1="-2.65" x2="-14.8" y2="-2.65" width="0.127" layer="21"/>
+<wire x1="14.8" y1="2.35" x2="14.8" y2="1.35" width="0.127" layer="21"/>
+<wire x1="-14.8" y1="2.35" x2="-14.8" y2="1.35" width="0.127" layer="21"/>
+<wire x1="-14.8" y1="0.95" x2="14.8" y2="0.95" width="0" layer="51"/>
+<wire x1="-14.8" y1="2.35" x2="-12.6" y2="2.35" width="0.127" layer="21"/>
+<wire x1="12.6" y1="2.35" x2="14.8" y2="2.35" width="0.127" layer="21"/>
 </package>
 <package name="RPI-SMD">
 <smd name="2" x="-24.13" y="2.7305" dx="1.27" dy="3.175" layer="1"/>
