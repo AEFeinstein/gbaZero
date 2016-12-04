@@ -9964,6 +9964,13 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <part name="R13" library="microbuilder" deviceset="RESISTOR" device="0603" value="100K"/>
 <part name="SUPPLY8" library="supply2" deviceset="+5V" device=""/>
 <part name="R14" library="microbuilder" deviceset="RESISTOR" device="0603" value="100K"/>
+<part name="C4" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="10μF"/>
+<part name="C8" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="0.1μF"/>
+<part name="C14" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="10μF"/>
+<part name="U$24" library="microbuilder" deviceset="3.3V" device=""/>
+<part name="U$28" library="microbuilder" deviceset="GND" device=""/>
+<part name="U$30" library="microbuilder" deviceset="GND" device=""/>
+<part name="SUPPLY11" library="supply2" deviceset="+5V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -10150,6 +10157,13 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <attribute name="NAME" x="104.648" y="190.5" size="1.27" layer="95" font="vector" rot="R90"/>
 <attribute name="VALUE" x="107.315" y="190.5" size="1.27" layer="96" font="vector" rot="R90"/>
 </instance>
+<instance part="C4" gate="G$1" x="111.76" y="83.82"/>
+<instance part="C8" gate="G$1" x="124.46" y="83.82"/>
+<instance part="C14" gate="G$1" x="137.16" y="83.82"/>
+<instance part="U$24" gate="G$1" x="119.38" y="91.44"/>
+<instance part="U$28" gate="G$1" x="137.16" y="78.74"/>
+<instance part="U$30" gate="G$1" x="119.38" y="78.74"/>
+<instance part="SUPPLY11" gate="+5V" x="137.16" y="91.44"/>
 </instances>
 <busses>
 </busses>
@@ -10352,6 +10366,18 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <segment>
 <pinref part="C6" gate="G$1" pin="P$1"/>
 <pinref part="GND9" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C14" gate="G$1" pin="P$2"/>
+<pinref part="U$28" gate="G$1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C4" gate="G$1" pin="P$2"/>
+<pinref part="C8" gate="G$1" pin="P$2"/>
+<wire x1="111.76" y1="81.28" x2="119.38" y2="81.28" width="0.1524" layer="91"/>
+<pinref part="U$30" gate="G$1" pin="GND"/>
+<wire x1="119.38" y1="81.28" x2="124.46" y2="81.28" width="0.1524" layer="91"/>
+<junction x="119.38" y="81.28"/>
 </segment>
 </net>
 <net name="MISO" class="0">
@@ -10626,6 +10652,14 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <pinref part="U$26" gate="G$1" pin="3.3V"/>
 <wire x1="160.02" y1="134.62" x2="165.1" y2="134.62" width="0.1524" layer="91"/>
 <junction x="160.02" y="134.62"/>
+</segment>
+<segment>
+<pinref part="C4" gate="G$1" pin="P$1"/>
+<pinref part="C8" gate="G$1" pin="P$1"/>
+<wire x1="111.76" y1="88.9" x2="119.38" y2="88.9" width="0.1524" layer="91"/>
+<pinref part="U$24" gate="G$1" pin="3.3V"/>
+<wire x1="119.38" y1="88.9" x2="124.46" y2="88.9" width="0.1524" layer="91"/>
+<junction x="119.38" y="88.9"/>
 </segment>
 </net>
 <net name="N$6" class="0">
@@ -10988,6 +11022,10 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <pinref part="SUPPLY9" gate="+5V" pin="+5V"/>
 <wire x1="119.38" y1="226.06" x2="119.38" y2="231.14" width="0.1524" layer="91"/>
 <junction x="119.38" y="226.06"/>
+</segment>
+<segment>
+<pinref part="C14" gate="G$1" pin="P$1"/>
+<pinref part="SUPPLY11" gate="+5V" pin="+5V"/>
 </segment>
 </net>
 <net name="N$21" class="0">
