@@ -2654,22 +2654,22 @@ digikey: SC1488-1-nD</description>
 <smd name="3" x="11.3538" y="-1.143" dx="2.1082" dy="2.1082" layer="1" rot="R90"/>
 <smd name="4" x="1.6002" y="7.1374" dx="2.1082" dy="2.1082" layer="1" rot="R90"/>
 <smd name="2" x="4.2164" y="7.1374" dx="2.1082" dy="2.1082" layer="1" rot="R90"/>
-<wire x1="0" y1="1.143" x2="0" y2="0" width="0.127" layer="21"/>
-<wire x1="0" y1="5.9944" x2="0" y2="5.08" width="0.127" layer="21"/>
-<wire x1="0" y1="5.08" x2="0" y2="1.143" width="0.127" layer="21"/>
-<wire x1="0" y1="1.143" x2="-1.27" y2="1.143" width="0.127" layer="21"/>
-<wire x1="-1.27" y1="1.143" x2="-1.27" y2="5.08" width="0.127" layer="21"/>
-<wire x1="-1.27" y1="5.08" x2="0" y2="5.08" width="0.127" layer="21"/>
+<wire x1="0" y1="1.143" x2="0" y2="0" width="0.127" layer="51"/>
+<wire x1="0" y1="5.9944" x2="0" y2="5.08" width="0.127" layer="51"/>
+<wire x1="0" y1="5.08" x2="0" y2="1.143" width="0.127" layer="51"/>
+<wire x1="0" y1="1.143" x2="-1.27" y2="1.143" width="0.127" layer="51"/>
+<wire x1="-1.27" y1="1.143" x2="-1.27" y2="5.08" width="0.127" layer="51"/>
+<wire x1="-1.27" y1="5.08" x2="0" y2="5.08" width="0.127" layer="51"/>
 <smd name="5" x="15.6718" y="3.9624" dx="2.1082" dy="2.1082" layer="1" rot="R180"/>
 <hole x="3.5052" y="2.9972" drill="1.651"/>
 <hole x="10.5156" y="2.9972" drill="1.651"/>
-<wire x1="0" y1="0" x2="1.016" y2="0" width="0.127" layer="21"/>
-<wire x1="3.81" y1="0" x2="9.906" y2="0" width="0.127" layer="21"/>
-<wire x1="12.7" y1="0" x2="14.5034" y2="0" width="0.127" layer="21"/>
-<wire x1="0" y1="5.9944" x2="0.381" y2="5.9944" width="0.127" layer="21"/>
-<wire x1="5.588" y1="5.9944" x2="14.5034" y2="5.9944" width="0.127" layer="21"/>
-<wire x1="14.5034" y1="0" x2="14.5034" y2="2.54" width="0.127" layer="21"/>
-<wire x1="14.5034" y1="5.9944" x2="14.5034" y2="5.334" width="0.127" layer="21"/>
+<wire x1="0" y1="0" x2="1.016" y2="0" width="0.127" layer="51"/>
+<wire x1="3.81" y1="0" x2="9.906" y2="0" width="0.127" layer="51"/>
+<wire x1="12.7" y1="0" x2="14.5034" y2="0" width="0.127" layer="51"/>
+<wire x1="0" y1="5.9944" x2="0.381" y2="5.9944" width="0.127" layer="51"/>
+<wire x1="5.588" y1="5.9944" x2="14.5034" y2="5.9944" width="0.127" layer="51"/>
+<wire x1="14.5034" y1="0" x2="14.5034" y2="2.54" width="0.127" layer="51"/>
+<wire x1="14.5034" y1="5.9944" x2="14.5034" y2="5.334" width="0.127" layer="51"/>
 </package>
 <package name="RASPBERRYPI_BASTELSTUBE_V13_RASPI_BOARD_B+_FULL">
 <description>Raspberry Pi board model B+, full outline with position of big connectors &amp;amp; drill holes</description>
@@ -9679,9 +9679,9 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <part name="R7" library="microbuilder" deviceset="RESISTOR" device="0805" value="100"/>
 <part name="GND2" library="microbuilder" deviceset="GND" device=""/>
 <part name="GND19" library="microbuilder" deviceset="GND" device=""/>
-<part name="C12" library="microbuilder" deviceset="CAP_CERAMIC" device="0805" value="0.1uF"/>
-<part name="C11" library="microbuilder" deviceset="CAP_CERAMIC" device="0805" value="10uF"/>
-<part name="C14" library="microbuilder" deviceset="CAP_CERAMIC" device="0805" value="10uF"/>
+<part name="C12" library="microbuilder" deviceset="CAP_CERAMIC" device="0805" value="0.1μF"/>
+<part name="C11" library="microbuilder" deviceset="CAP_CERAMIC" device="0805" value="10μF"/>
+<part name="C14" library="microbuilder" deviceset="CAP_CERAMIC" device="0805" value="10μF"/>
 <part name="SUPPLY10" library="supply2" deviceset="+5V" device=""/>
 <part name="GND21" library="microbuilder" deviceset="GND" device=""/>
 <part name="U1" library="adafruit" deviceset="AXP083" device="-SAG" value="APX803"/>
@@ -9763,7 +9763,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <part name="C7" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="1.0μF"/>
 <part name="C2" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="10μF"/>
 <part name="C4" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="10μF"/>
-<part name="C13" library="microbuilder" deviceset="CAP_ELECTROLYTIC" device="PANASONIC_D" value="100uF"/>
+<part name="C13" library="microbuilder" deviceset="CAP_ELECTROLYTIC" device="PANASONIC_D" value="100μF"/>
 <part name="U5" library="gba-zero-parts" deviceset="LM4875" device=""/>
 <part name="GND14" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="R11" library="microbuilder" deviceset="RESISTOR" device="0603" value="100K"/>
