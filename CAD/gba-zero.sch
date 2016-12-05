@@ -193,8 +193,8 @@
 <smd name="3" x="0" y="1.1" dx="1" dy="1.4" layer="1"/>
 <smd name="2" x="0.95" y="-1.1" dx="1" dy="1.4" layer="1"/>
 <smd name="1" x="-0.95" y="-1.1" dx="1" dy="1.4" layer="1"/>
-<text x="-1.905" y="1.905" size="1.27" layer="25">&gt;NAME</text>
-<text x="-1.905" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
+<text x="1.905" y="0" size="0.8128" layer="25" font="vector" ratio="18">&gt;NAME</text>
+<text x="1.905" y="-0.635" size="0.4064" layer="27" font="vector" ratio="10">&gt;VALUE</text>
 <rectangle x1="-0.2286" y1="0.7112" x2="0.2286" y2="1.2954" layer="51"/>
 <rectangle x1="0.7112" y1="-1.2954" x2="1.1684" y2="-0.7112" layer="51"/>
 <rectangle x1="-1.1684" y1="-1.2954" x2="-0.7112" y2="-0.7112" layer="51"/>
@@ -308,8 +308,7 @@
 <smd name="1" x="-0.762" y="0" dx="1.1684" dy="1.6002" layer="1" cream="no"/>
 <smd name="2" x="0.762" y="0" dx="1.1684" dy="1.6002" layer="1" cream="no"/>
 <smd name="WIRE" x="0" y="0" dx="0.635" dy="0.2032" layer="1" cream="no"/>
-<text x="-1.651" y="1.27" size="0.8128" layer="25" ratio="18">&gt;NAME</text>
-<text x="-1.524" y="-1.651" size="0.4064" layer="27" ratio="10">&gt;VALUE</text>
+<text x="-1.651" y="1.27" size="0.8128" layer="25" font="vector" ratio="18">&gt;NAME</text>
 <rectangle x1="-0.0762" y1="-0.9144" x2="0.0762" y2="0.9144" layer="29"/>
 </package>
 <package name="SOLDERJUMPER_REFLOW_NOPASTE">
@@ -380,8 +379,8 @@
 <circle x="0" y="0" radius="3.1" width="0.1016" layer="51"/>
 <smd name="-" x="-2.654" y="0" dx="3.556" dy="1.4" layer="1"/>
 <smd name="+" x="2.654" y="0" dx="3.556" dy="1.4" layer="1"/>
-<text x="-3.02" y="3.54" size="0.8128" layer="25" ratio="18">&gt;NAME</text>
-<text x="-3.048" y="-4.318" size="0.4064" layer="27" ratio="10">&gt;VALUE</text>
+<text x="-3.02" y="3.54" size="0.8128" layer="25" font="vector" ratio="18">&gt;NAME</text>
+<text x="-3.048" y="-4.318" size="0.4064" layer="27" font="vector" ratio="10">&gt;VALUE</text>
 <rectangle x1="-3.65" y1="-0.35" x2="-3.05" y2="0.35" layer="51"/>
 <rectangle x1="3.05" y1="-0.35" x2="3.65" y2="0.35" layer="51"/>
 <polygon width="0.1016" layer="51">
@@ -405,8 +404,8 @@
 <wire x1="1.873" y1="0.883" x2="1.873" y2="-0.883" width="0.0508" layer="39"/>
 <smd name="1" x="-0.95" y="0" dx="1.3" dy="1.5" layer="1"/>
 <smd name="2" x="0.95" y="0" dx="1.3" dy="1.5" layer="1"/>
-<text x="2.032" y="-0.127" size="0.8128" layer="25" ratio="18">&gt;NAME</text>
-<text x="2.032" y="-0.762" size="0.4064" layer="27" ratio="10">&gt;VALUE</text>
+<text x="2.032" y="-0.127" size="0.8128" layer="25" font="vector" ratio="18">&gt;NAME</text>
+<text x="2.032" y="-0.762" size="0.4064" layer="27" font="vector" ratio="10">&gt;VALUE</text>
 <rectangle x1="-1.0922" y1="-0.7239" x2="-0.3421" y2="0.7262" layer="51"/>
 <rectangle x1="0.3556" y1="-0.7239" x2="1.1057" y2="0.7262" layer="51"/>
 <rectangle x1="-0.1001" y1="-0.4001" x2="0.1001" y2="0.4001" layer="35"/>
@@ -595,8 +594,8 @@
 <description>&lt;b&gt;SOD323&lt;/b&gt; (2.5x1.2mm)</description>
 <smd name="C" x="-1.27" y="0" dx="1.35" dy="0.8" layer="1"/>
 <smd name="A" x="1.27" y="0" dx="1.35" dy="0.8" layer="1"/>
-<text x="-1.1" y="1" size="0.8128" layer="25" ratio="18">&gt;NAME</text>
-<text x="-1.1" y="-1.792" size="0.4064" layer="27" ratio="10">&gt;VALUE</text>
+<text x="-1.1" y="1" size="0.8128" layer="25" font="vector" ratio="18">&gt;NAME</text>
+<text x="-1.1" y="-1.792" size="0.4064" layer="27" font="vector" ratio="10">&gt;VALUE</text>
 <wire x1="-1" y1="0.7" x2="1" y2="0.7" width="0.2032" layer="21"/>
 <wire x1="1" y1="0.7" x2="1" y2="-0.7" width="0.2032" layer="51"/>
 <wire x1="1" y1="-0.7" x2="-1" y2="-0.7" width="0.2032" layer="21"/>
@@ -774,25 +773,6 @@ chip</description>
 <rectangle x1="2.175" y1="-1.1" x2="2.825" y2="1.1" layer="51" rot="R180"/>
 <rectangle x1="-1.75" y1="-1.225" x2="-1.075" y2="1.225" layer="51"/>
 </package>
-<package name="SOT23-WIDE">
-<wire x1="1.5724" y1="0.6604" x2="1.5724" y2="-0.6604" width="0.2032" layer="51"/>
-<wire x1="1.5724" y1="-0.6604" x2="-1.5724" y2="-0.6604" width="0.1524" layer="51"/>
-<wire x1="-1.5724" y1="-0.6604" x2="-1.5724" y2="0.6604" width="0.2032" layer="51"/>
-<wire x1="-1.5724" y1="0.6604" x2="1.5724" y2="0.6604" width="0.2032" layer="51"/>
-<wire x1="-1.6724" y1="-0.6524" x2="-1.6724" y2="0.6604" width="0.2032" layer="21"/>
-<wire x1="-1.6724" y1="0.6604" x2="-0.7136" y2="0.6604" width="0.2032" layer="21"/>
-<wire x1="1.6724" y1="0.6604" x2="1.6724" y2="-0.6524" width="0.2032" layer="21"/>
-<wire x1="0.7136" y1="0.6604" x2="1.6724" y2="0.6604" width="0.2032" layer="21"/>
-<wire x1="0.2224" y1="-0.6604" x2="-0.2364" y2="-0.6604" width="0.2032" layer="21"/>
-<smd name="3" x="0" y="1" dx="1" dy="1.27" layer="1"/>
-<smd name="2" x="0.95" y="-1" dx="1" dy="1.27" layer="1"/>
-<smd name="1" x="-0.95" y="-1" dx="1" dy="1.27" layer="1"/>
-<text x="1.905" y="0" size="0.8128" layer="25" ratio="18">&gt;NAME</text>
-<text x="1.905" y="-0.635" size="0.4064" layer="27" ratio="10">&gt;VALUE</text>
-<rectangle x1="-0.2286" y1="0.7112" x2="0.2286" y2="1.2954" layer="51"/>
-<rectangle x1="0.7112" y1="-1.2954" x2="1.1684" y2="-0.7112" layer="51"/>
-<rectangle x1="-1.1684" y1="-1.2954" x2="-0.7112" y2="-0.7112" layer="51"/>
-</package>
 <package name="PANASONIC_C">
 <description>&lt;b&gt;Panasonic Aluminium Electrolytic Capacitor VS-Serie Package C&lt;/b&gt;</description>
 <wire x1="-2.6" y1="2.6" x2="1.25" y2="2.6" width="0.1016" layer="51"/>
@@ -864,6 +844,25 @@ grid 3.5 mm, diameter 10 mm</description>
 <text x="5.588" y="0.127" size="0.8128" layer="25" ratio="18">&gt;NAME</text>
 <text x="5.588" y="-0.635" size="0.4064" layer="27" ratio="10">&gt;VALUE</text>
 <rectangle x1="0.254" y1="-1.27" x2="0.762" y2="1.27" layer="51"/>
+</package>
+<package name="SOT23-WIDE">
+<wire x1="1.5724" y1="0.6604" x2="1.5724" y2="-0.6604" width="0.2032" layer="51"/>
+<wire x1="1.5724" y1="-0.6604" x2="-1.5724" y2="-0.6604" width="0.1524" layer="51"/>
+<wire x1="-1.5724" y1="-0.6604" x2="-1.5724" y2="0.6604" width="0.2032" layer="51"/>
+<wire x1="-1.5724" y1="0.6604" x2="1.5724" y2="0.6604" width="0.2032" layer="51"/>
+<wire x1="-1.6724" y1="-0.6524" x2="-1.6724" y2="0.6604" width="0.2032" layer="21"/>
+<wire x1="-1.6724" y1="0.6604" x2="-0.7136" y2="0.6604" width="0.2032" layer="21"/>
+<wire x1="1.6724" y1="0.6604" x2="1.6724" y2="-0.6524" width="0.2032" layer="21"/>
+<wire x1="0.7136" y1="0.6604" x2="1.6724" y2="0.6604" width="0.2032" layer="21"/>
+<wire x1="0.2224" y1="-0.6604" x2="-0.2364" y2="-0.6604" width="0.2032" layer="21"/>
+<smd name="3" x="0" y="1" dx="1" dy="1.27" layer="1"/>
+<smd name="2" x="0.95" y="-1" dx="1" dy="1.27" layer="1"/>
+<smd name="1" x="-0.95" y="-1" dx="1" dy="1.27" layer="1"/>
+<text x="1.905" y="0" size="0.8128" layer="25" font="vector" ratio="18">&gt;NAME</text>
+<text x="1.905" y="-0.635" size="0.4064" layer="27" font="vector" ratio="10">&gt;VALUE</text>
+<rectangle x1="-0.2286" y1="0.7112" x2="0.2286" y2="1.2954" layer="51"/>
+<rectangle x1="0.7112" y1="-1.2954" x2="1.1684" y2="-0.7112" layer="51"/>
+<rectangle x1="-1.1684" y1="-1.2954" x2="-0.7112" y2="-0.7112" layer="51"/>
 </package>
 </packages>
 <symbols>
@@ -2636,8 +2635,8 @@ Source: http://www.analog.com/static/imported-files/data_sheets/AD8541_8542_8544
 <smd name="6" x="2.875" y="-0.325" dx="0.9" dy="0.35" layer="1" rot="R180"/>
 <smd name="7" x="2.875" y="0.325" dx="0.9" dy="0.35" layer="1" rot="R180"/>
 <smd name="8" x="2.875" y="0.975" dx="0.9" dy="0.35" layer="1" rot="R180"/>
-<text x="-3.048" y="1.778" size="1.27" layer="25">&gt;NAME</text>
-<text x="-3.048" y="-3.048" size="1.27" layer="27">&gt;VALUE</text>
+<text x="-3.048" y="1.778" size="1.27" layer="25" font="vector">&gt;NAME</text>
+<text x="-3.048" y="-3.048" size="1.27" layer="27" font="vector">&gt;VALUE</text>
 <rectangle x1="-3.2" y1="0.825" x2="-2.25" y2="1.125" layer="51"/>
 <rectangle x1="-3.2" y1="0.175" x2="-2.25" y2="0.475" layer="51"/>
 <rectangle x1="-3.2" y1="-0.475" x2="-2.25" y2="-0.175" layer="51"/>
@@ -2985,8 +2984,8 @@ digikey: SC1488-1-nD</description>
 <smd name="BAT" x="1" y="-3.7" dx="1" dy="4.6" layer="1"/>
 <smd name="NC1" x="-3.4" y="1.5" dx="3.4" dy="1.6" layer="1" rot="R90"/>
 <smd name="NC2" x="3.4" y="1.5" dx="3.4" dy="1.6" layer="1" rot="R90"/>
-<text x="-2.2225" y="1.9685" size="0.8128" layer="25" ratio="18">&gt;Name</text>
-<text x="-2.2225" y="1.27" size="0.4064" layer="27" ratio="10">&gt;Value</text>
+<text x="-2.2225" y="1.9685" size="0.8128" layer="25" font="vector" ratio="18">&gt;Name</text>
+<text x="-2.2225" y="1.27" size="0.4064" layer="27" font="vector" ratio="10">&gt;Value</text>
 </package>
 <package name="JSTSH2">
 <wire x1="2" y1="2.125" x2="-2" y2="2.125" width="0.127" layer="20"/>
@@ -3033,7 +3032,7 @@ digikey: SC1488-1-nD</description>
 <text x="-2.2225" y="1.27" size="0.4064" layer="27" ratio="10">&gt;Value</text>
 </package>
 <package name="FPC-50-CON">
-<polygon width="0.127" layer="22">
+<polygon width="0.127" layer="21">
 <vertex x="12.2" y="3.97"/>
 <vertex x="11.7" y="4.47"/>
 <vertex x="12.7" y="4.47"/>
@@ -3192,8 +3191,8 @@ digikey: SC1488-1-nD</description>
 <smd name="8" x="2.6" y="1.905" dx="0.6" dy="2.2" layer="1" rot="R270"/>
 <smd name="6" x="2.6" y="-0.635" dx="0.6" dy="2.2" layer="1" rot="R270"/>
 <smd name="5" x="2.6" y="-1.905" dx="0.6" dy="2.2" layer="1" rot="R270"/>
-<text x="-1.905" y="2.921" size="1.27" layer="25">&gt;NAME</text>
-<text x="-1.905" y="-4.191" size="1.27" layer="27">&gt;VALUE</text>
+<text x="-1.905" y="2.921" size="1.27" layer="25" font="vector">&gt;NAME</text>
+<text x="-1.905" y="-4.191" size="1.27" layer="27" font="vector">&gt;VALUE</text>
 </package>
 </packages>
 <symbols>
@@ -5375,8 +5374,8 @@ diameter 5.2 mm, horizontal, grid 15.24 mm</description>
 <wire x1="1.905" y1="0" x2="1.905" y2="0.889" width="0.1524" layer="21"/>
 <pad name="A" x="3.81" y="0" drill="0.8128" shape="long"/>
 <pad name="C" x="-3.81" y="0" drill="0.8128" shape="long"/>
-<text x="-1.905" y="1.27" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-1.905" y="-2.54" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<text x="-1.905" y="1.27" size="1.27" layer="25" font="vector" ratio="10">&gt;NAME</text>
+<text x="-1.905" y="-2.54" size="1.27" layer="27" font="vector" ratio="10">&gt;VALUE</text>
 <rectangle x1="-1.27" y1="-0.889" x2="-0.762" y2="0.889" layer="21"/>
 </package>
 <package name="SOD106-R">
@@ -8047,8 +8046,8 @@ type 0204, grid 7.5 mm</description>
 <wire x1="2.54" y1="-0.762" x2="2.54" y2="0.762" width="0.1524" layer="21"/>
 <pad name="1" x="-3.81" y="0" drill="0.8128" shape="octagon"/>
 <pad name="2" x="3.81" y="0" drill="0.8128" shape="octagon"/>
-<text x="-2.54" y="1.2954" size="0.9906" layer="25" ratio="10">&gt;NAME</text>
-<text x="-1.6256" y="-0.4826" size="0.9906" layer="27" ratio="10">&gt;VALUE</text>
+<text x="-2.54" y="1.2954" size="0.9906" layer="25" font="vector" ratio="10">&gt;NAME</text>
+<text x="-1.6256" y="-0.4826" size="0.9906" layer="27" font="vector" ratio="10">&gt;VALUE</text>
 <rectangle x1="2.54" y1="-0.254" x2="2.921" y2="0.254" layer="21"/>
 <rectangle x1="-2.921" y1="-0.254" x2="-2.54" y2="0.254" layer="21"/>
 </package>
