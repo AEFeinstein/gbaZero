@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.001" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -1928,7 +1928,7 @@ digikey: SC1488-1-nD</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="PWR_SWITCH">
+<deviceset name="PWR_SWITCH" prefix="S">
 <gates>
 <gate name="G$1" symbol="PWR-SWITCH" x="0" y="0"/>
 </gates>
@@ -1946,7 +1946,7 @@ digikey: SC1488-1-nD</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="RPI-ZERO">
+<deviceset name="RPI-ZERO" prefix="U">
 <gates>
 <gate name="G$1" symbol="RPI-ZERO" x="0" y="0"/>
 </gates>
@@ -2047,7 +2047,7 @@ digikey: SC1488-1-nD</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="SWTCHCRFT_3.5JACK">
+<deviceset name="SWTCHCRFT_3.5JACK" prefix="J">
 <description>Switchcraft 3.5mm Stereo Audio Jack
 
 manufacturer: 35RASMT4BHNTRX
@@ -2071,7 +2071,7 @@ digikey: SC1488-1-ND</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="RK10J12E0A0A">
+<deviceset name="RK10J12E0A0A" prefix="R">
 <gates>
 <gate name="G$1" symbol="RK10J12E0A0A" x="0" y="0"/>
 </gates>
@@ -2110,7 +2110,7 @@ digikey: SC1488-1-ND</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="DISP_LCD_CTP28" prefix="TFT" uservalue="yes">
+<deviceset name="DISP_LCD_CTP28" prefix="P" uservalue="yes">
 <description>&lt;p&gt;2.83" 240x320 Pixel Capacitive Touch Display&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="TFT_CTP28_240X320_50PIN" x="0" y="0"/>
@@ -2289,7 +2289,7 @@ digikey: SC1488-1-ND</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="POWERBOOST-1000C">
+<deviceset name="POWERBOOST-1000C" prefix="U">
 <gates>
 <gate name="G$1" symbol="POWERBOOST-1000C" x="0" y="0"/>
 </gates>
@@ -2310,7 +2310,7 @@ digikey: SC1488-1-ND</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="START_SELECT_BUTTON">
+<deviceset name="START_SELECT_BUTTON" prefix="S">
 <gates>
 <gate name="G$1" symbol="START_SELECT_BUTTON" x="0" y="0"/>
 </gates>
@@ -2327,7 +2327,7 @@ digikey: SC1488-1-ND</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="D-PAD">
+<deviceset name="D-PAD" prefix="S">
 <gates>
 <gate name="G$1" symbol="D-PAD" x="0" y="0"/>
 </gates>
@@ -2346,7 +2346,7 @@ digikey: SC1488-1-ND</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="LINK_CONNECTOR">
+<deviceset name="LINK_CONNECTOR" prefix="P">
 <gates>
 <gate name="G$1" symbol="LINK_CONNECTOR" x="0" y="0"/>
 </gates>
@@ -2367,7 +2367,7 @@ digikey: SC1488-1-ND</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="SHOULDER_BUTTON">
+<deviceset name="SHOULDER_BUTTON" prefix="S">
 <gates>
 <gate name="G$1" symbol="SHOULDER_BUTTON" x="0" y="0"/>
 </gates>
@@ -2383,7 +2383,7 @@ digikey: SC1488-1-ND</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="74LVC2G02">
+<deviceset name="74LVC2G02" prefix="U">
 <gates>
 <gate name="G$1" symbol="74LVC2G02DP" x="0" y="0"/>
 </gates>
@@ -2405,7 +2405,7 @@ digikey: SC1488-1-ND</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="74LVC3G04">
+<deviceset name="74LVC3G04" prefix="U">
 <gates>
 <gate name="G$1" symbol="74LVC3G04" x="0" y="0"/>
 </gates>
@@ -2427,7 +2427,7 @@ digikey: SC1488-1-ND</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="LTST-C19HE1WT">
+<deviceset name="LTST-C19HE1WT" prefix="D">
 <gates>
 <gate name="G$1" symbol="LTST-C19HE1WT" x="0" y="0"/>
 </gates>
@@ -2445,7 +2445,7 @@ digikey: SC1488-1-ND</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="AB_BUTTON">
+<deviceset name="AB_BUTTON" prefix="S">
 <gates>
 <gate name="G$1" symbol="AB_BUTTON" x="0" y="0"/>
 </gates>
@@ -2462,7 +2462,7 @@ digikey: SC1488-1-ND</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="JST_2PIN" prefix="CN" uservalue="yes">
+<deviceset name="JST_2PIN" prefix="P" uservalue="yes">
 <description>JST 2-Pin Right-Angle Connector
 &lt;ul&gt;
 &lt;li&gt;PH-Series - 4UConnector: 17311&lt;/li&gt;
