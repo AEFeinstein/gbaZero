@@ -318,11 +318,16 @@
 <hole x="115.854896875" y="47.952840625" drill="3.8"/>
 <hole x="126.78759375" y="32.478265625" drill="4"/>
 <hole x="6.13759375" y="28.588890625" drill="4"/>
-<circle x="113.0755" y="61.42" radius="2.6924" width="1.016" layer="21"/>
+<circle x="113.0755" y="61.42" radius="2.6924" width="1.016" layer="51"/>
 <circle x="112.029784375" y="56.711425" radius="3.3528" width="0.0127" layer="22"/>
 <circle x="21.69509375" y="56.767015625" radius="3.3528" width="0.0127" layer="22"/>
 <wire x1="36.203840625" y1="17.526" x2="36.203840625" y2="7.68698125" width="0" layer="20"/>
 <wire x1="98.2533625" y1="17.526" x2="36.203840625" y2="17.526" width="0" layer="20"/>
+<text x="29.464" y="36.83" size="1.016" layer="25" font="vector">gbaZero
+Adam Feinstein
+(C) 12/2017
+For Saba
+The calipers worked great</text>
 </plain>
 <libraries>
 <library name="adafruit">
@@ -1274,11 +1279,11 @@ digikey: SC1488-1-nD</description>
 <text x="-2.2225" y="1.27" size="0.4064" layer="27" font="vector" ratio="10">&gt;Value</text>
 </package>
 <package name="SO-8">
-<wire x1="1.9" y1="-2.4" x2="-1.4" y2="-2.4" width="0.2032" layer="51"/>
+<wire x1="1.9" y1="-2.4" x2="-1.4" y2="-2.4" width="0.2032" layer="21"/>
 <wire x1="-1.4" y1="-2.4" x2="-1.9" y2="-2.4" width="0.2032" layer="51"/>
 <wire x1="-1.9" y1="-2.4" x2="-1.9" y2="2.4" width="0.2032" layer="51"/>
 <wire x1="-1.9" y1="2.4" x2="-1.4" y2="2.4" width="0.2032" layer="51"/>
-<wire x1="-1.4" y1="2.4" x2="1.9" y2="2.4" width="0.2032" layer="51"/>
+<wire x1="-1.4" y1="2.4" x2="1.9" y2="2.4" width="0.2032" layer="21"/>
 <wire x1="1.9" y1="2.4" x2="1.9" y2="-2.4" width="0.2032" layer="51"/>
 <wire x1="-1.4" y1="-2.4" x2="-1.4" y2="2.4" width="0.2032" layer="51"/>
 <smd name="2" x="-2.6" y="0.635" dx="0.6" dy="2.2" layer="1" rot="R270"/>
@@ -1291,6 +1296,8 @@ digikey: SC1488-1-nD</description>
 <smd name="5" x="2.6" y="-1.905" dx="0.6" dy="2.2" layer="1" rot="R270"/>
 <text x="-1.905" y="2.921" size="1.27" layer="25" font="vector">&gt;NAME</text>
 <text x="-1.905" y="-4.191" size="1.27" layer="27" font="vector">&gt;VALUE</text>
+<circle x="-0.9398" y="1.905" radius="0.254" width="0" layer="21"/>
+<wire x1="0.381" y1="2.3622" x2="-0.381" y2="2.3622" width="0.127" layer="21" curve="-180"/>
 </package>
 </packages>
 </library>
@@ -2635,9 +2642,9 @@ design rules under a new name.</description>
 <element name="C3" library="microbuilder" package="0805" value="0.1uF" x="38.1" y="41.656" rot="MR0"/>
 <element name="C1" library="microbuilder" package="0805" value="10uF" x="38.1" y="38.608" rot="MR0"/>
 <element name="C5" library="microbuilder" package="0805" value="10uF" x="64.081659375" y="68.539359375" rot="MR0"/>
-<element name="IC5" library="adafruit" package="SOT23" value="APX803" x="67.523359375" y="31.193740625" smashed="yes" rot="R180">
-<attribute name="NAME" x="69.174359375" y="31.193740625" size="0.8128" layer="25" font="vector" ratio="18" rot="R180" align="bottom-right"/>
-<attribute name="VALUE" x="69.174359375" y="31.828740625" size="0.4064" layer="27" font="vector" ratio="10" rot="R180" align="bottom-right"/>
+<element name="IC5" library="adafruit" package="SOT23" value="APX803" x="67.523359375" y="30.685740625" smashed="yes" rot="R180">
+<attribute name="NAME" x="69.174359375" y="30.685740625" size="0.8128" layer="25" font="vector" ratio="18" rot="R180" align="bottom-right"/>
+<attribute name="VALUE" x="69.174359375" y="31.320740625" size="0.4064" layer="27" font="vector" ratio="10" rot="R180" align="bottom-right"/>
 </element>
 <element name="U$2" library="gba-zero-parts" package="FPC-50-CON" value="50_PIN_CON" x="55.2704" y="40.0558" locked="yes" smashed="yes" rot="R270"/>
 <element name="R6" library="microbuilder" package="0805" value="10K" x="72.898" y="30.431740625" rot="R270"/>
@@ -2866,10 +2873,11 @@ design rules under a new name.</description>
 <contactref element="R6" pad="1"/>
 <contactref element="U$2" pad="10"/>
 <wire x1="57.9204" y1="32.3058" x2="57.9204" y2="32.293740625" width="0.254" layer="1"/>
-<wire x1="57.9204" y1="32.293740625" x2="66.573359375" y2="32.293740625" width="0.254" layer="1"/>
-<wire x1="72.898" y1="31.381740625" x2="70.751740625" y2="33.528" width="0.254" layer="1"/>
-<wire x1="70.751740625" y1="33.528" x2="67.80761875" y2="33.528" width="0.254" layer="1"/>
-<wire x1="67.80761875" y1="33.528" x2="66.573359375" y2="32.293740625" width="0.254" layer="1"/>
+<wire x1="57.9204" y1="32.3058" x2="66.573359375" y2="32.3058" width="0.254" layer="1"/>
+<wire x1="66.573359375" y1="32.3058" x2="66.573359375" y2="31.785740625" width="0.254" layer="1"/>
+<wire x1="72.898" y1="31.381740625" x2="71.259740625" y2="33.02" width="0.254" layer="1"/>
+<wire x1="71.259740625" y1="33.02" x2="67.287559375" y2="33.02" width="0.254" layer="1"/>
+<wire x1="67.287559375" y1="33.02" x2="66.573359375" y2="32.3058" width="0.254" layer="1"/>
 </signal>
 <signal name="RT_INT">
 <contactref element="U$2" pad="44"/>
@@ -2954,7 +2962,7 @@ design rules under a new name.</description>
 <wire x1="67.564" y1="28.956" x2="67.523359375" y2="28.956" width="0.508" layer="1"/>
 <wire x1="67.523359375" y1="28.956" x2="64.897" y2="28.956" width="0.508" layer="1"/>
 <wire x1="64.897" y1="28.956" x2="62.865" y2="28.956" width="0.508" layer="1"/>
-<wire x1="67.523359375" y1="30.093740625" x2="67.523359375" y2="28.956" width="0.508" layer="1"/>
+<wire x1="67.523359375" y1="29.585740625" x2="67.523359375" y2="28.956" width="0.508" layer="1"/>
 <wire x1="57.9204" y1="31.3058" x2="41.656" y2="31.3058" width="0.508" layer="1"/>
 <wire x1="41.656" y1="31.3058" x2="41.656" y2="31.242" width="0.508" layer="1"/>
 <via x="41.656" y="31.242" extent="1-16" drill="0.6" shape="square"/>
@@ -3253,11 +3261,11 @@ design rules under a new name.</description>
 <wire x1="113.792" y1="20.32" x2="113.792" y2="17.290459375" width="0.508" layer="16"/>
 <wire x1="113.792" y1="17.290459375" x2="113.877996875" y2="17.2044625" width="0.508" layer="16"/>
 <wire x1="118.872" y1="43.776" x2="118.784" y2="43.688" width="0.508" layer="16"/>
-<wire x1="106.426" y1="30.138" x2="106.426" y2="35.052" width="0.508" layer="16"/>
-<via x="106.426" y="35.052" extent="1-16" drill="0.6" shape="square"/>
-<wire x1="106.426" y1="35.052" x2="118.872" y2="35.052" width="0.508" layer="1"/>
-<via x="118.872" y="35.052" extent="1-16" drill="0.6" shape="square"/>
-<wire x1="118.872" y1="35.052" x2="118.872" y2="41.402" width="0.508" layer="16"/>
+<wire x1="106.426" y1="30.138" x2="106.426" y2="34.798" width="0.508" layer="16"/>
+<via x="106.426" y="34.798" extent="1-16" drill="0.6" shape="square"/>
+<wire x1="106.426" y1="34.798" x2="118.872" y2="34.798" width="0.508" layer="1"/>
+<via x="118.872" y="34.798" extent="1-16" drill="0.6" shape="square"/>
+<wire x1="118.872" y1="34.798" x2="118.872" y2="41.402" width="0.508" layer="16"/>
 <wire x1="106.426" y1="30.138" x2="103.865" y2="30.138" width="0.508" layer="16"/>
 <wire x1="103.865" y1="30.138" x2="103.826" y2="30.099" width="0.508" layer="16"/>
 <wire x1="103.826" y1="30.099" x2="101.346" y2="30.099" width="0.508" layer="16"/>
@@ -3476,11 +3484,11 @@ design rules under a new name.</description>
 <contactref element="U$17" pad="2"/>
 <contactref element="U2" pad="4"/>
 <wire x1="117.7417" y1="18.239740625" x2="117.602" y2="18.239740625" width="0.254" layer="16"/>
-<wire x1="117.602" y1="18.239740625" x2="117.602" y2="36.068" width="0.254" layer="16"/>
-<via x="117.602" y="36.068" extent="1-16" drill="0.6" shape="square"/>
-<wire x1="117.602" y1="36.068" x2="103.632" y2="36.068" width="0.254" layer="1"/>
-<via x="103.632" y="36.068" extent="1-16" drill="0.6" shape="square"/>
-<wire x1="103.632" y1="36.068" x2="103.632" y2="34.103" width="0.254" layer="16"/>
+<wire x1="117.602" y1="18.239740625" x2="117.602" y2="35.814" width="0.254" layer="16"/>
+<via x="117.602" y="35.814" extent="1-16" drill="0.6" shape="square"/>
+<wire x1="117.602" y1="35.814" x2="103.632" y2="35.814" width="0.254" layer="1"/>
+<via x="103.632" y="35.814" extent="1-16" drill="0.6" shape="square"/>
+<wire x1="103.632" y1="35.814" x2="103.632" y2="34.103" width="0.254" layer="16"/>
 <wire x1="103.632" y1="34.103" x2="103.826" y2="33.909" width="0.254" layer="16"/>
 </signal>
 <signal name="VO2">
@@ -3512,4 +3520,10 @@ design rules under a new name.</description>
 </signals>
 </board>
 </drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
 </eagle>

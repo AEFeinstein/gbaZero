@@ -2983,11 +2983,11 @@ digikey: SC1488-1-nD</description>
 <text x="-26.9868" y="2.2176" size="1.016" layer="21" font="vector" ratio="10">2</text>
 </package>
 <package name="SO-8">
-<wire x1="1.9" y1="-2.4" x2="-1.4" y2="-2.4" width="0.2032" layer="51"/>
+<wire x1="1.9" y1="-2.4" x2="-1.4" y2="-2.4" width="0.2032" layer="21"/>
 <wire x1="-1.4" y1="-2.4" x2="-1.9" y2="-2.4" width="0.2032" layer="51"/>
 <wire x1="-1.9" y1="-2.4" x2="-1.9" y2="2.4" width="0.2032" layer="51"/>
 <wire x1="-1.9" y1="2.4" x2="-1.4" y2="2.4" width="0.2032" layer="51"/>
-<wire x1="-1.4" y1="2.4" x2="1.9" y2="2.4" width="0.2032" layer="51"/>
+<wire x1="-1.4" y1="2.4" x2="1.9" y2="2.4" width="0.2032" layer="21"/>
 <wire x1="1.9" y1="2.4" x2="1.9" y2="-2.4" width="0.2032" layer="51"/>
 <wire x1="-1.4" y1="-2.4" x2="-1.4" y2="2.4" width="0.2032" layer="51"/>
 <smd name="2" x="-2.6" y="0.635" dx="0.6" dy="2.2" layer="1" rot="R270"/>
@@ -3000,6 +3000,8 @@ digikey: SC1488-1-nD</description>
 <smd name="5" x="2.6" y="-1.905" dx="0.6" dy="2.2" layer="1" rot="R270"/>
 <text x="-1.905" y="2.921" size="1.27" layer="25" font="vector">&gt;NAME</text>
 <text x="-1.905" y="-4.191" size="1.27" layer="27" font="vector">&gt;VALUE</text>
+<circle x="-0.9398" y="1.905" radius="0.254" width="0" layer="21"/>
+<wire x1="0.381" y1="2.3622" x2="-0.381" y2="2.3622" width="0.127" layer="21" curve="-180"/>
 </package>
 </packages>
 <symbols>
