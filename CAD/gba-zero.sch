@@ -235,130 +235,6 @@
 </library>
 <library name="microbuilder">
 <packages>
-<package name="SOLDERJUMPER_REFLOW">
-<description>&lt;b&gt;Solder Jumper&lt;/b&gt; - Reflow</description>
-<wire x1="1.397" y1="-1.016" x2="-1.397" y2="-1.016" width="0.2032" layer="21"/>
-<wire x1="1.397" y1="1.016" x2="1.651" y2="0.762" width="0.2032" layer="21" curve="-90"/>
-<wire x1="-1.651" y1="0.762" x2="-1.397" y2="1.016" width="0.2032" layer="21" curve="-90"/>
-<wire x1="-1.651" y1="-0.762" x2="-1.397" y2="-1.016" width="0.2032" layer="21" curve="90"/>
-<wire x1="1.397" y1="-1.016" x2="1.651" y2="-0.762" width="0.2032" layer="21" curve="90"/>
-<wire x1="1.651" y1="-0.762" x2="1.651" y2="0.762" width="0.2032" layer="21"/>
-<wire x1="-1.651" y1="-0.762" x2="-1.651" y2="0.762" width="0.2032" layer="21"/>
-<wire x1="-1.397" y1="1.016" x2="1.397" y2="1.016" width="0.2032" layer="21"/>
-<wire x1="1.016" y1="0" x2="1.524" y2="0" width="0.2032" layer="51"/>
-<wire x1="-1.016" y1="0" x2="-1.524" y2="0" width="0.2032" layer="51"/>
-<wire x1="-0.254" y1="-0.127" x2="-0.254" y2="0.127" width="1.27" layer="51" curve="-180" cap="flat"/>
-<wire x1="0.254" y1="0.127" x2="0.254" y2="-0.127" width="1.27" layer="51" curve="-180" cap="flat"/>
-<smd name="1" x="-0.762" y="0" dx="1.1684" dy="1.6002" layer="1"/>
-<smd name="2" x="0.762" y="0" dx="1.1684" dy="1.6002" layer="1"/>
-<text x="-1.651" y="1.27" size="0.8128" layer="25" ratio="18">&gt;NAME</text>
-<text x="0.4001" y="0" size="0.02" layer="27">&gt;VALUE</text>
-<rectangle x1="-0.0762" y1="-0.9144" x2="0.0762" y2="0.9144" layer="29"/>
-</package>
-<package name="SOLDERJUMPER_WAVE">
-<description>&lt;b&gt;Solder Jumper&lt;/b&gt; - Wave</description>
-<wire x1="1.905" y1="-1.524" x2="-1.905" y2="-1.524" width="0.2032" layer="21"/>
-<wire x1="1.905" y1="1.524" x2="2.159" y2="1.27" width="0.2032" layer="21" curve="-90"/>
-<wire x1="-2.159" y1="1.27" x2="-1.905" y2="1.524" width="0.2032" layer="21" curve="-90"/>
-<wire x1="-2.159" y1="-1.27" x2="-1.905" y2="-1.524" width="0.2032" layer="21" curve="90"/>
-<wire x1="1.905" y1="-1.524" x2="2.159" y2="-1.27" width="0.2032" layer="21" curve="90"/>
-<wire x1="2.159" y1="-1.27" x2="2.159" y2="1.27" width="0.2032" layer="21"/>
-<wire x1="-2.159" y1="-1.27" x2="-2.159" y2="1.27" width="0.2032" layer="21"/>
-<wire x1="-1.905" y1="1.524" x2="1.905" y2="1.524" width="0.2032" layer="21"/>
-<wire x1="0.762" y1="0.762" x2="0.762" y2="-0.762" width="0.2032" layer="51"/>
-<wire x1="-0.762" y1="0.762" x2="-0.762" y2="-0.762" width="0.2032" layer="51"/>
-<wire x1="1.524" y1="0" x2="2.032" y2="0" width="0.2032" layer="51"/>
-<wire x1="-1.524" y1="0" x2="-2.032" y2="0" width="0.2032" layer="51"/>
-<wire x1="0.762" y1="0.762" x2="0.762" y2="-0.762" width="0.2032" layer="51" curve="-180"/>
-<wire x1="-0.762" y1="0.762" x2="-0.762" y2="-0.762" width="0.2032" layer="51" curve="180"/>
-<smd name="1" x="-1.27" y="0" dx="1.27" dy="2.54" layer="1"/>
-<smd name="2" x="1.27" y="0" dx="1.27" dy="2.54" layer="1"/>
-<text x="-2.159" y="1.778" size="0.8128" layer="25" ratio="18">&gt;NAME</text>
-<text x="1" y="0" size="0.02" layer="27">&gt;VALUE</text>
-<rectangle x1="0.762" y1="-0.762" x2="1.016" y2="0.762" layer="51"/>
-<rectangle x1="1.016" y1="-0.635" x2="1.27" y2="0.635" layer="51"/>
-<rectangle x1="1.27" y1="-0.508" x2="1.397" y2="0.508" layer="51"/>
-<rectangle x1="1.397" y1="-0.254" x2="1.524" y2="0.254" layer="51"/>
-<rectangle x1="-1.016" y1="-0.762" x2="-0.762" y2="0.762" layer="51"/>
-<rectangle x1="-1.27" y1="-0.635" x2="-1.016" y2="0.635" layer="51"/>
-<rectangle x1="-1.397" y1="-0.508" x2="-1.27" y2="0.508" layer="51"/>
-<rectangle x1="-1.524" y1="-0.254" x2="-1.397" y2="0.254" layer="51"/>
-<rectangle x1="0.9652" y1="-0.7112" x2="1.0922" y2="-0.5842" layer="51"/>
-<rectangle x1="1.3462" y1="-0.3556" x2="1.4732" y2="-0.2286" layer="51"/>
-<rectangle x1="1.3462" y1="0.2032" x2="1.4732" y2="0.3302" layer="51"/>
-<rectangle x1="0.9652" y1="0.5842" x2="1.0922" y2="0.7112" layer="51"/>
-<rectangle x1="-1.0922" y1="-0.7112" x2="-0.9652" y2="-0.5842" layer="51"/>
-<rectangle x1="-1.4478" y1="-0.3302" x2="-1.3208" y2="-0.2032" layer="51"/>
-<rectangle x1="-1.4732" y1="0.2032" x2="-1.3462" y2="0.3302" layer="51"/>
-<rectangle x1="-1.1176" y1="0.5842" x2="-0.9906" y2="0.7112" layer="51"/>
-</package>
-<package name="SOLDERJUMPER_CLOSEDWIRE">
-<wire x1="1.397" y1="-1.016" x2="-1.397" y2="-1.016" width="0.2032" layer="21"/>
-<wire x1="1.397" y1="1.016" x2="1.651" y2="0.762" width="0.2032" layer="21" curve="-90"/>
-<wire x1="-1.651" y1="0.762" x2="-1.397" y2="1.016" width="0.2032" layer="21" curve="-90"/>
-<wire x1="-1.651" y1="-0.762" x2="-1.397" y2="-1.016" width="0.2032" layer="21" curve="90"/>
-<wire x1="1.397" y1="-1.016" x2="1.651" y2="-0.762" width="0.2032" layer="21" curve="90"/>
-<wire x1="1.651" y1="-0.762" x2="1.651" y2="0.762" width="0.2032" layer="21"/>
-<wire x1="-1.651" y1="-0.762" x2="-1.651" y2="0.762" width="0.2032" layer="21"/>
-<wire x1="-1.397" y1="1.016" x2="1.397" y2="1.016" width="0.2032" layer="21"/>
-<wire x1="1.016" y1="0" x2="1.524" y2="0" width="0.2032" layer="51"/>
-<wire x1="-1.016" y1="0" x2="-1.524" y2="0" width="0.2032" layer="51"/>
-<wire x1="-0.254" y1="-0.127" x2="-0.254" y2="0.127" width="1.27" layer="51" curve="-180" cap="flat"/>
-<wire x1="0.254" y1="0.127" x2="0.254" y2="-0.127" width="1.27" layer="51" curve="-180" cap="flat"/>
-<smd name="1" x="-0.762" y="0" dx="1.1684" dy="1.6002" layer="1" cream="no"/>
-<smd name="2" x="0.762" y="0" dx="1.1684" dy="1.6002" layer="1" cream="no"/>
-<smd name="WIRE" x="0" y="0" dx="0.635" dy="0.2032" layer="1" cream="no"/>
-<text x="-1.651" y="1.27" size="0.8128" layer="25" font="vector" ratio="18">&gt;NAME</text>
-<rectangle x1="-0.0762" y1="-0.9144" x2="0.0762" y2="0.9144" layer="29"/>
-</package>
-<package name="SOLDERJUMPER_REFLOW_NOPASTE">
-<wire x1="1.397" y1="-1.016" x2="-1.397" y2="-1.016" width="0.2032" layer="21"/>
-<wire x1="1.397" y1="1.016" x2="1.651" y2="0.762" width="0.2032" layer="21" curve="-90"/>
-<wire x1="-1.651" y1="0.762" x2="-1.397" y2="1.016" width="0.2032" layer="21" curve="-90"/>
-<wire x1="-1.651" y1="-0.762" x2="-1.397" y2="-1.016" width="0.2032" layer="21" curve="90"/>
-<wire x1="1.397" y1="-1.016" x2="1.651" y2="-0.762" width="0.2032" layer="21" curve="90"/>
-<wire x1="1.651" y1="-0.762" x2="1.651" y2="0.762" width="0.2032" layer="21"/>
-<wire x1="-1.651" y1="-0.762" x2="-1.651" y2="0.762" width="0.2032" layer="21"/>
-<wire x1="-1.397" y1="1.016" x2="1.397" y2="1.016" width="0.2032" layer="21"/>
-<wire x1="1.016" y1="0" x2="1.524" y2="0" width="0.2032" layer="51"/>
-<wire x1="-1.016" y1="0" x2="-1.524" y2="0" width="0.2032" layer="51"/>
-<wire x1="-0.254" y1="-0.127" x2="-0.254" y2="0.127" width="1.27" layer="51" curve="-180" cap="flat"/>
-<wire x1="0.254" y1="0.127" x2="0.254" y2="-0.127" width="1.27" layer="51" curve="-180" cap="flat"/>
-<smd name="1" x="-0.762" y="0" dx="1.1684" dy="1.6002" layer="1" cream="no"/>
-<smd name="2" x="0.762" y="0" dx="1.1684" dy="1.6002" layer="1" cream="no"/>
-<text x="-1.651" y="1.27" size="0.8128" layer="25" ratio="18">&gt;NAME</text>
-<text x="0.4001" y="0" size="0.02" layer="27">&gt;VALUE</text>
-<rectangle x1="-0.0762" y1="-0.9144" x2="0.0762" y2="0.9144" layer="29"/>
-</package>
-<package name="SOLDERJUMPER_ARROW_NOPASTE">
-<wire x1="1.397" y1="-1.016" x2="-1.397" y2="-1.016" width="0.2032" layer="21"/>
-<wire x1="1.397" y1="1.016" x2="1.651" y2="0.762" width="0.2032" layer="21" curve="-90"/>
-<wire x1="-1.651" y1="0.762" x2="-1.397" y2="1.016" width="0.2032" layer="21" curve="-90"/>
-<wire x1="-1.651" y1="-0.762" x2="-1.397" y2="-1.016" width="0.2032" layer="21" curve="90"/>
-<wire x1="1.397" y1="-1.016" x2="1.651" y2="-0.762" width="0.2032" layer="21" curve="90"/>
-<wire x1="1.651" y1="-0.762" x2="1.651" y2="0.762" width="0.2032" layer="21"/>
-<wire x1="-1.651" y1="-0.762" x2="-1.651" y2="0.762" width="0.2032" layer="21"/>
-<wire x1="-1.397" y1="1.016" x2="1.397" y2="1.016" width="0.2032" layer="21"/>
-<smd name="1" x="-1.016" y="0" dx="0.762" dy="1.524" layer="1" roundness="50" stop="no" cream="no"/>
-<smd name="2" x="1.016" y="0" dx="0.762" dy="1.524" layer="1" roundness="50" stop="no" cream="no"/>
-<text x="-1.778" y="1.27" size="0.8128" layer="25" ratio="18">&gt;NAME</text>
-<text x="-1.651" y="-1.651" size="0.4064" layer="27" ratio="10">&gt;VALUE</text>
-<polygon width="0.0508" layer="1">
-<vertex x="-1.143" y="0.7366"/>
-<vertex x="-0.5715" y="0.7366"/>
-<vertex x="0.1651" y="0"/>
-<vertex x="-0.5715" y="-0.7366"/>
-<vertex x="-1.143" y="-0.7366"/>
-</polygon>
-<polygon width="0.0508" layer="1">
-<vertex x="-0.127" y="0.7366"/>
-<vertex x="0.5842" y="0"/>
-<vertex x="-0.127" y="-0.7366"/>
-<vertex x="1.143" y="-0.7366"/>
-<vertex x="1.143" y="0.7366"/>
-</polygon>
-<rectangle x1="-1.4605" y1="-0.8255" x2="1.4605" y2="0.8255" layer="29"/>
-</package>
 <package name="PANASONIC_D">
 <description>&lt;b&gt;Panasonic Aluminium Electrolytic Capacitor VS-Serie Package D&lt;/b&gt;</description>
 <wire x1="-3.25" y1="3.25" x2="1.55" y2="3.25" width="0.1016" layer="51"/>
@@ -871,16 +747,6 @@ grid 3.5 mm, diameter 10 mm</description>
 <text x="-1.524" y="-2.54" size="1.27" layer="96">&gt;VALUE</text>
 <pin name="GND" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
 </symbol>
-<symbol name="SOLDERJUMPER">
-<wire x1="0.381" y1="0.635" x2="0.381" y2="-0.635" width="1.27" layer="94" curve="-180" cap="flat"/>
-<wire x1="-0.381" y1="-0.635" x2="-0.381" y2="0.635" width="1.27" layer="94" curve="-180" cap="flat"/>
-<wire x1="2.54" y1="0" x2="1.651" y2="0" width="0.1524" layer="94"/>
-<wire x1="-2.54" y1="0" x2="-1.651" y2="0" width="0.1524" layer="94"/>
-<text x="-2.54" y="2.54" size="1.778" layer="95">&gt;NAME</text>
-<text x="-2.54" y="-3.81" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="2" x="5.08" y="0" visible="pad" length="short" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="1" x="-5.08" y="0" visible="pad" length="short" direction="pas" swaplevel="1"/>
-</symbol>
 <symbol name="3.3V">
 <wire x1="-1.27" y1="-1.27" x2="0" y2="0" width="0.254" layer="94"/>
 <wire x1="0" y1="0" x2="1.27" y2="-1.27" width="0.254" layer="94"/>
@@ -982,65 +848,6 @@ grid 3.5 mm, diameter 10 mm</description>
 <device name="">
 <technologies>
 <technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="SOLDERJUMPER" prefix="SJ" uservalue="yes">
-<description>&lt;p&gt;&lt;b&gt;SMD Solder JUMPER&lt;/b&gt;&lt;/p&gt;
-&lt;p&gt;Solder the two pads together to create a connection, or remove the solder to break it.&lt;/p&gt;
-&lt;b&gt;REFLOW&lt;/b&gt; - Use this footprint for solder paste and reflow ovens.&lt;br/&gt;
-&lt;b&gt;WAVE&lt;/b&gt; - Use this footprint for hand-soldering (larger pads).
-&lt;p&gt;&lt;b&gt;CLOSED&lt;/b&gt; - Has a trace between the two pads to ensure it is closed by default.  The trace needs to be cut to disable the jumper, and can be closed again by creating a solder bridge between the two pads.&lt;/p&gt;</description>
-<gates>
-<gate name="1" symbol="SOLDERJUMPER" x="0" y="0"/>
-</gates>
-<devices>
-<device name="REFLOW" package="SOLDERJUMPER_REFLOW">
-<connects>
-<connect gate="1" pin="1" pad="1"/>
-<connect gate="1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="WAVE" package="SOLDERJUMPER_WAVE">
-<connects>
-<connect gate="1" pin="1" pad="1"/>
-<connect gate="1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="CLOSED" package="SOLDERJUMPER_CLOSEDWIRE">
-<connects>
-<connect gate="1" pin="1" pad="1"/>
-<connect gate="1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="REFLOW_NOPASTE" package="SOLDERJUMPER_REFLOW_NOPASTE">
-<connects>
-<connect gate="1" pin="1" pad="1"/>
-<connect gate="1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="" package="SOLDERJUMPER_ARROW_NOPASTE">
-<connects>
-<connect gate="1" pin="1" pad="1"/>
-<connect gate="1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="BOM" value="EXCLUDE" constant="no"/>
-</technology>
 </technologies>
 </device>
 </devices>
@@ -2222,7 +2029,7 @@ LETTER landscape</description>
 <circle x="0" y="0" radius="4.526496875" width="0" layer="22"/>
 <circle x="7.96158125" y="0" radius="2.99851875" width="0.25275" layer="21"/>
 <circle x="0" y="-7.96158125" radius="2.99851875" width="0.25275" layer="21"/>
-<polygon width="0" layer="1">
+<polygon width="0.1524" layer="1">
 <vertex x="0.160840625" y="7.547990625"/>
 <vertex x="0.183815625" y="8.69685"/>
 <vertex x="0.20679375" y="8.972575"/>
@@ -2246,7 +2053,7 @@ LETTER landscape</description>
 <vertex x="1.40160625" y="7.456084375"/>
 <vertex x="0.643359375" y="7.525015625"/>
 </polygon>
-<polygon width="0" layer="1">
+<polygon width="0.1524" layer="1">
 <vertex x="-0.183815625" y="7.547990625"/>
 <vertex x="-0.20679375" y="8.69685"/>
 <vertex x="-0.229771875" y="8.972575"/>
@@ -2272,7 +2079,7 @@ LETTER landscape</description>
 </polygon>
 <smd name="GND@1" x="1.14885625" y="8.4441" dx="1.03926875" dy="0.574428125" layer="1"/>
 <smd name="UP" x="-1.14885625" y="8.4441" dx="1.14885625" dy="0.574428125" layer="1"/>
-<polygon width="0" layer="1">
+<polygon width="0.1524" layer="1">
 <vertex x="-0.160840625" y="-7.547990625"/>
 <vertex x="-0.183815625" y="-8.69685"/>
 <vertex x="-0.20679375" y="-8.972575"/>
@@ -2296,7 +2103,7 @@ LETTER landscape</description>
 <vertex x="-1.40160625" y="-7.456084375"/>
 <vertex x="-0.643359375" y="-7.525015625"/>
 </polygon>
-<polygon width="0" layer="1">
+<polygon width="0.1524" layer="1">
 <vertex x="0.183815625" y="-7.547990625"/>
 <vertex x="0.20679375" y="-8.69685"/>
 <vertex x="0.229771875" y="-8.972575"/>
@@ -2322,7 +2129,7 @@ LETTER landscape</description>
 </polygon>
 <smd name="GND@3" x="-1.14885625" y="-8.4441" dx="1.14885625" dy="0.574428125" layer="1" rot="R180"/>
 <smd name="DOWN" x="1.14885625" y="-8.4441" dx="1.03926875" dy="0.574428125" layer="1" rot="R180"/>
-<polygon width="0" layer="1">
+<polygon width="0.1524" layer="1">
 <vertex x="7.547990625" y="-0.160840625"/>
 <vertex x="8.69685" y="-0.183815625"/>
 <vertex x="8.972575" y="-0.20679375"/>
@@ -2346,7 +2153,7 @@ LETTER landscape</description>
 <vertex x="7.456084375" y="-1.40160625"/>
 <vertex x="7.525015625" y="-0.643359375"/>
 </polygon>
-<polygon width="0" layer="1">
+<polygon width="0.1524" layer="1">
 <vertex x="7.547990625" y="0.183815625"/>
 <vertex x="8.69685" y="0.20679375"/>
 <vertex x="8.972575" y="0.229771875"/>
@@ -2373,7 +2180,7 @@ LETTER landscape</description>
 <smd name="GND@4" x="8.4441" y="-1.14885625" dx="1.14885625" dy="0.574428125" layer="1" rot="R270"/>
 <smd name="RIGHT" x="8.4441" y="1.14885625" dx="1.14885625" dy="0.574428125" layer="1" rot="R270"/>
 <circle x="-7.940903125" y="0" radius="2.99851875" width="0.25275" layer="21"/>
-<polygon width="0" layer="1">
+<polygon width="0.1524" layer="1">
 <vertex x="-7.547990625" y="0.160840625"/>
 <vertex x="-8.69685" y="0.183815625"/>
 <vertex x="-8.972575" y="0.20679375"/>
@@ -2397,7 +2204,7 @@ LETTER landscape</description>
 <vertex x="-7.456084375" y="1.40160625"/>
 <vertex x="-7.525015625" y="0.643359375"/>
 </polygon>
-<polygon width="0" layer="1">
+<polygon width="0.1524" layer="1">
 <vertex x="-7.547990625" y="-0.183815625"/>
 <vertex x="-8.69685" y="-0.20679375"/>
 <vertex x="-8.972575" y="-0.229771875"/>
@@ -2527,21 +2334,21 @@ LETTER landscape</description>
 <smd name="STR" x="-0.045953125" y="3.998021875" dx="0.229771875" dy="0.229771875" layer="1" rot="R45"/>
 <circle x="0" y="-3.998021875" radius="1.884125" width="0" layer="29"/>
 <circle x="0" y="3.998021875" radius="1.884125" width="0" layer="29"/>
-<polygon width="0" layer="1">
+<polygon width="0.1524" layer="1">
 <vertex x="-1.79221875" y="-3.906115625"/>
 <vertex x="-0.781221875" y="-3.906115625"/>
 <vertex x="-0.20679375" y="-3.308709375"/>
 <vertex x="-0.20679375" y="-2.228784375" curve="80"/>
 <vertex x="-1.79221875" y="-3.81420625"/>
 </polygon>
-<polygon width="0" layer="1">
+<polygon width="0.1524" layer="1">
 <vertex x="0.022978125" y="-5.790240625"/>
-<vertex x="0.022978125" y="-4.6873375"/>
-<vertex x="0.59740625" y="-4.08993125"/>
+<vertex x="0.022978125" y="-4.7381375"/>
+<vertex x="0.64820625" y="-4.08993125"/>
 <vertex x="1.79221875" y="-4.08993125" curve="-82.5"/>
 <vertex x="0.091909375" y="-5.790240625"/>
 </polygon>
-<polygon width="0" layer="1">
+<polygon width="0.1524" layer="1">
 <vertex x="-1.769240625" y="-4.319703125"/>
 <vertex x="-0.712290625" y="-4.319703125"/>
 <vertex x="0.229771875" y="-3.377640625"/>
@@ -2553,21 +2360,21 @@ LETTER landscape</description>
 <vertex x="-0.3906125" y="-5.7442875" curve="-65"/>
 <vertex x="-1.769240625" y="-4.36565625"/>
 </polygon>
-<polygon width="0" layer="1">
+<polygon width="0.1524" layer="1">
 <vertex x="-1.79221875" y="4.08993125"/>
 <vertex x="-0.781221875" y="4.08993125"/>
 <vertex x="-0.20679375" y="4.6873375"/>
 <vertex x="-0.20679375" y="5.7672625" curve="80"/>
 <vertex x="-1.79221875" y="4.181840625"/>
 </polygon>
-<polygon width="0" layer="1">
+<polygon width="0.1524" layer="1">
 <vertex x="0.022978125" y="2.20580625"/>
-<vertex x="0.022978125" y="3.308709375"/>
-<vertex x="0.59740625" y="3.906115625"/>
+<vertex x="0.022978125" y="3.257909375"/>
+<vertex x="0.64820625" y="3.906115625"/>
 <vertex x="1.79221875" y="3.906115625" curve="-82.5"/>
 <vertex x="0.091909375" y="2.20580625"/>
 </polygon>
-<polygon width="0" layer="1">
+<polygon width="0.1524" layer="1">
 <vertex x="-1.769240625" y="3.67634375"/>
 <vertex x="-0.712290625" y="3.67634375"/>
 <vertex x="0.229771875" y="4.61840625"/>
@@ -2677,7 +2484,7 @@ Source: http://www.analog.com/static/imported-files/data_sheets/AD8541_8542_8544
 <package name="AB_BUTTON">
 <circle x="6.5484875" y="2.240271875" radius="2.26325" width="0" layer="22"/>
 <circle x="-6.5484875" y="-2.240271875" radius="2.26325" width="0" layer="22"/>
-<polygon width="0" layer="1">
+<polygon width="0.1524" layer="1">
 <vertex x="-7.950090625" y="-5.261765625"/>
 <vertex x="-7.122915625" y="-5.4915375"/>
 <vertex x="-6.916121875" y="-4.89413125"/>
@@ -2699,7 +2506,7 @@ Source: http://www.analog.com/static/imported-files/data_sheets/AD8541_8542_8544
 <vertex x="-7.766275" y="-4.50351875"/>
 <vertex x="-7.927115625" y="-4.710315625"/>
 </polygon>
-<polygon width="0" layer="1">
+<polygon width="0.1524" layer="1">
 <vertex x="-5.100925" y="0.758246875"/>
 <vertex x="-5.928103125" y="0.98801875"/>
 <vertex x="-6.134896875" y="0.3906125"/>
@@ -2721,11 +2528,11 @@ Source: http://www.analog.com/static/imported-files/data_sheets/AD8541_8542_8544
 <vertex x="-5.28474375" y="0"/>
 <vertex x="-5.123903125" y="0.20679375"/>
 </polygon>
-<polygon width="0" layer="1">
+<polygon width="0.1524" layer="1">
 <vertex x="-9.374675" y="0.022978125"/>
 <vertex x="-9.374675" y="-4.4345875" curve="135"/>
 </polygon>
-<polygon width="0" layer="1">
+<polygon width="0.1524" layer="1">
 <vertex x="-3.722296875" y="-4.4345875"/>
 <vertex x="-3.722296875" y="0.022978125" curve="135"/>
 </polygon>
@@ -2735,7 +2542,7 @@ Source: http://www.analog.com/static/imported-files/data_sheets/AD8541_8542_8544
 <smd name="GND@1" x="-7.398640625" y="-4.6873375" dx="1.14885625" dy="0.574428125" layer="1" rot="R77"/>
 <circle x="-6.5484875" y="-2.240271875" radius="3.67634375" width="0" layer="29"/>
 <circle x="6.5484875" y="2.240271875" radius="2.26325" width="0" layer="22"/>
-<polygon width="0" layer="1">
+<polygon width="0.1524" layer="1">
 <vertex x="5.14688125" y="-0.781221875"/>
 <vertex x="5.97405625" y="-1.01099375"/>
 <vertex x="6.180853125" y="-0.4135875"/>
@@ -2757,7 +2564,7 @@ Source: http://www.analog.com/static/imported-files/data_sheets/AD8541_8542_8544
 <vertex x="5.330696875" y="-0.022978125"/>
 <vertex x="5.16985625" y="-0.229771875"/>
 </polygon>
-<polygon width="0" layer="1">
+<polygon width="0.1524" layer="1">
 <vertex x="7.996046875" y="5.2387875"/>
 <vertex x="7.16886875" y="5.468559375"/>
 <vertex x="6.962075" y="4.871153125"/>
@@ -2779,11 +2586,11 @@ Source: http://www.analog.com/static/imported-files/data_sheets/AD8541_8542_8544
 <vertex x="7.812228125" y="4.48054375"/>
 <vertex x="7.97306875" y="4.6873375"/>
 </polygon>
-<polygon width="0" layer="1">
+<polygon width="0.1524" layer="1">
 <vertex x="3.722296875" y="4.50351875"/>
 <vertex x="3.722296875" y="0.045953125" curve="135"/>
 </polygon>
-<polygon width="0" layer="1">
+<polygon width="0.1524" layer="1">
 <vertex x="9.374675" y="0.045953125"/>
 <vertex x="9.374675" y="4.50351875" curve="135"/>
 </polygon>
@@ -5366,9 +5173,7 @@ diameter 5.2 mm, horizontal, grid 15.24 mm</description>
 <description>&lt;b&gt;DIODE&lt;/b&gt;</description>
 <wire x1="1.905" y1="0.889" x2="-1.905" y2="0.889" width="0.1524" layer="21"/>
 <wire x1="-1.905" y1="-0.889" x2="1.905" y2="-0.889" width="0.1524" layer="21"/>
-<wire x1="-1.905" y1="0" x2="-2.794" y2="0" width="0.1524" layer="21"/>
 <wire x1="-1.905" y1="0.889" x2="-1.905" y2="0" width="0.1524" layer="21"/>
-<wire x1="2.794" y1="0" x2="1.905" y2="0" width="0.1524" layer="21"/>
 <wire x1="1.905" y1="-0.889" x2="1.905" y2="0" width="0.1524" layer="21"/>
 <wire x1="-1.905" y1="0" x2="-1.905" y2="-0.889" width="0.1524" layer="21"/>
 <wire x1="1.905" y1="0" x2="1.905" y2="0.889" width="0.1524" layer="21"/>
@@ -9895,7 +9700,6 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <part name="U$29" library="microbuilder" deviceset="3.3V" device=""/>
 <part name="U$34" library="microbuilder" deviceset="3.3V" device=""/>
 <part name="U$41" library="microbuilder" deviceset="GND" device=""/>
-<part name="WPJ1" library="microbuilder" deviceset="SOLDERJUMPER" device="CLOSED" value="0"/>
 <part name="D2" library="microbuilder" deviceset="DIODE" device="SOD-323" value="1N4148"/>
 <part name="Q2" library="microbuilder" deviceset="MOSFET-N" device="WIDE" value="BSS138"/>
 <part name="U$7" library="gba-zero-parts" deviceset="RPI-ZERO" device="SMD" value="RPI-ZEROSMD"/>
@@ -9939,7 +9743,6 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <part name="SUPPLY12" library="supply2" deviceset="+5V" device=""/>
 <part name="U$15" library="microbuilder" deviceset="3.3V" device=""/>
 <part name="GND2" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="WPJ4" library="microbuilder" deviceset="SOLDERJUMPER" device="CLOSED" value="0"/>
 <part name="R17" library="microbuilder" deviceset="RESISTOR" device="0805" value="167"/>
 <part name="R20" library="microbuilder" deviceset="RESISTOR" device="0805" value="250"/>
 <part name="R21" library="microbuilder" deviceset="RESISTOR" device="0805" value="250"/>
@@ -9971,6 +9774,8 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <part name="U$28" library="microbuilder" deviceset="GND" device=""/>
 <part name="U$30" library="microbuilder" deviceset="GND" device=""/>
 <part name="SUPPLY11" library="supply2" deviceset="+5V" device=""/>
+<part name="R15" library="microbuilder" deviceset="RESISTOR" device="0603" value="0"/>
+<part name="R16" library="microbuilder" deviceset="RESISTOR" device="0603" value="0"/>
 </parts>
 <sheets>
 <sheet>
@@ -10049,7 +9854,6 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <instance part="U$29" gate="G$1" x="22.86" y="66.04"/>
 <instance part="U$34" gate="G$1" x="55.88" y="43.18"/>
 <instance part="U$41" gate="G$1" x="157.48" y="45.72"/>
-<instance part="WPJ1" gate="1" x="25.4" y="33.02" rot="R90"/>
 <instance part="D2" gate="G$1" x="22.86" y="45.72" rot="R270"/>
 <instance part="Q2" gate="G$1" x="27.94" y="55.88" smashed="yes">
 <attribute name="NAME" x="31.242" y="59.436" size="1.27" layer="95"/>
@@ -10102,7 +9906,6 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <instance part="SUPPLY12" gate="+5V" x="111.76" y="200.66"/>
 <instance part="U$15" gate="G$1" x="63.5" y="218.44"/>
 <instance part="GND2" gate="1" x="63.5" y="205.74"/>
-<instance part="WPJ4" gate="1" x="17.78" y="33.02" rot="R90"/>
 <instance part="R17" gate="G$1" x="116.84" y="144.78" smashed="yes" rot="R180">
 <attribute name="NAME" x="119.38" y="142.748" size="1.27" layer="95" font="vector" rot="R180"/>
 <attribute name="VALUE" x="118.618" y="145.415" size="1.27" layer="96" font="vector" rot="R180"/>
@@ -10164,6 +9967,14 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <instance part="U$28" gate="G$1" x="137.16" y="78.74"/>
 <instance part="U$30" gate="G$1" x="119.38" y="78.74"/>
 <instance part="SUPPLY11" gate="+5V" x="137.16" y="91.44"/>
+<instance part="R15" gate="G$1" x="17.78" y="33.02" smashed="yes" rot="R270">
+<attribute name="NAME" x="19.812" y="35.56" size="1.27" layer="95" font="vector" rot="R270"/>
+<attribute name="VALUE" x="17.145" y="34.798" size="1.27" layer="96" font="vector" rot="R270"/>
+</instance>
+<instance part="R16" gate="G$1" x="25.4" y="33.02" smashed="yes" rot="R270">
+<attribute name="NAME" x="27.432" y="35.56" size="1.27" layer="95" font="vector" rot="R270"/>
+<attribute name="VALUE" x="24.765" y="34.798" size="1.27" layer="96" font="vector" rot="R270"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -10554,7 +10365,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <segment>
 <wire x1="35.56" y1="27.94" x2="25.4" y2="27.94" width="0.1524" layer="91"/>
 <label x="27.94" y="27.94" size="1.778" layer="95"/>
-<pinref part="WPJ1" gate="1" pin="1"/>
+<pinref part="R16" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <wire x1="220.98" y1="83.82" x2="236.22" y2="83.82" width="0.1524" layer="91"/>
@@ -10664,13 +10475,13 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </net>
 <net name="N$6" class="0">
 <segment>
-<pinref part="WPJ1" gate="1" pin="2"/>
 <pinref part="D2" gate="G$1" pin="C"/>
-<pinref part="WPJ4" gate="1" pin="2"/>
 <wire x1="25.4" y1="38.1" x2="22.86" y2="38.1" width="0.1524" layer="91"/>
 <wire x1="22.86" y1="38.1" x2="17.78" y2="38.1" width="0.1524" layer="91"/>
 <wire x1="22.86" y1="43.18" x2="22.86" y2="38.1" width="0.1524" layer="91"/>
 <junction x="22.86" y="38.1"/>
+<pinref part="R16" gate="G$1" pin="1"/>
+<pinref part="R15" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$7" class="0">
@@ -11125,8 +10936,8 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <segment>
 <wire x1="17.78" y1="22.86" x2="35.56" y2="22.86" width="0.1524" layer="91"/>
 <label x="27.94" y="22.86" size="1.778" layer="95"/>
-<pinref part="WPJ4" gate="1" pin="1"/>
 <wire x1="17.78" y1="27.94" x2="17.78" y2="22.86" width="0.1524" layer="91"/>
+<pinref part="R15" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="TXD" class="0">
