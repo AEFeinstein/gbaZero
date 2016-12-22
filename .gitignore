@@ -27,9 +27,7 @@ eagle.epf
 *.crc
 *.crs
 
-*.dri
 *.drl
-*.gpi
 *.pls
 
 *.drd
