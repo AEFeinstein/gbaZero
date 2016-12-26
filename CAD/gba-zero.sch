@@ -10013,7 +10013,6 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <part name="U4" library="gba-zero-parts" deviceset="74LVC3G04" device=""/>
 <part name="D2" library="gba-zero-parts" deviceset="LTST-C19HE1WT" device=""/>
 <part name="SUPPLY2" library="supply2" deviceset="+5V" device=""/>
-<part name="SUPPLY5" library="supply2" deviceset="+5V" device=""/>
 <part name="SUPPLY9" library="supply2" deviceset="+5V" device=""/>
 <part name="GND7" library="microbuilder" deviceset="GND" device=""/>
 <part name="GND9" library="microbuilder" deviceset="GND" device=""/>
@@ -10068,6 +10067,8 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <part name="SUPPLY8" library="supply2" deviceset="+5V" device=""/>
 <part name="R1" library="microbuilder" deviceset="RESISTOR" device="0603" value="0"/>
 <part name="R3" library="microbuilder" deviceset="RESISTOR" device="0603" value="0"/>
+<part name="D4" library="microbuilder" deviceset="DIODE" device="SOD-323" value="1N4148"/>
+<part name="D5" library="microbuilder" deviceset="DIODE" device="SOD-323" value="1N4148"/>
 </parts>
 <sheets>
 <sheet>
@@ -10169,8 +10170,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <instance part="U3" gate="G$1" x="78.74" y="152.4"/>
 <instance part="U4" gate="G$1" x="104.14" y="152.4"/>
 <instance part="D2" gate="G$1" x="129.54" y="152.4" rot="R180"/>
-<instance part="SUPPLY2" gate="+5V" x="78.74" y="170.18"/>
-<instance part="SUPPLY5" gate="+5V" x="104.14" y="170.18"/>
+<instance part="SUPPLY2" gate="+5V" x="86.36" y="177.8"/>
 <instance part="SUPPLY9" gate="+5V" x="139.7" y="154.94"/>
 <instance part="GND7" gate="G$1" x="78.74" y="132.08" rot="MR0"/>
 <instance part="GND9" gate="G$1" x="101.6" y="134.62" rot="MR0"/>
@@ -10267,6 +10267,8 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <attribute name="NAME" x="27.432" y="35.56" size="1.27" layer="95" font="vector" rot="R270"/>
 <attribute name="VALUE" x="24.765" y="34.798" size="1.27" layer="96" font="vector" rot="R270"/>
 </instance>
+<instance part="D4" gate="G$1" x="86.36" y="170.18" rot="R270"/>
+<instance part="D5" gate="G$1" x="93.98" y="170.18" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -10818,6 +10820,12 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <wire x1="231.14" y1="172.72" x2="231.14" y2="167.64" width="0.1524" layer="91"/>
 <junction x="231.14" y="172.72"/>
 </segment>
+<segment>
+<wire x1="93.98" y1="172.72" x2="93.98" y2="180.34" width="0.1524" layer="91"/>
+<label x="93.98" y="175.26" size="1.778" layer="95"/>
+<pinref part="D5" gate="G$1" pin="A"/>
+<junction x="93.98" y="172.72"/>
+</segment>
 </net>
 <net name="LBO" class="0">
 <segment>
@@ -11108,14 +11116,6 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <junction x="38.1" y="55.88"/>
 </segment>
 <segment>
-<pinref part="U3" gate="G$1" pin="VCC"/>
-<pinref part="SUPPLY2" gate="+5V" pin="+5V"/>
-</segment>
-<segment>
-<pinref part="U4" gate="G$1" pin="VCC"/>
-<pinref part="SUPPLY5" gate="+5V" pin="+5V"/>
-</segment>
-<segment>
 <pinref part="D2" gate="G$1" pin="VCC"/>
 <pinref part="SUPPLY9" gate="+5V" pin="+5V"/>
 </segment>
@@ -11134,6 +11134,11 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <segment>
 <pinref part="C9" gate="G$1" pin="P$1"/>
 <pinref part="SUPPLY8" gate="+5V" pin="+5V"/>
+</segment>
+<segment>
+<pinref part="D4" gate="G$1" pin="A"/>
+<pinref part="SUPPLY2" gate="+5V" pin="+5V"/>
+<wire x1="86.36" y1="175.26" x2="86.36" y2="172.72" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$21" class="0">
@@ -11341,12 +11346,23 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <wire x1="106.68" y1="198.12" x2="106.68" y2="213.36" width="0.1524" layer="91"/>
 </segment>
 </net>
+<net name="N$19" class="0">
+<segment>
+<pinref part="U3" gate="G$1" pin="VCC"/>
+<pinref part="U4" gate="G$1" pin="VCC"/>
+<wire x1="78.74" y1="167.64" x2="86.36" y2="167.64" width="0.1524" layer="91"/>
+<pinref part="D4" gate="G$1" pin="C"/>
+<wire x1="86.36" y1="167.64" x2="93.98" y2="167.64" width="0.1524" layer="91"/>
+<junction x="86.36" y="167.64"/>
+<pinref part="D5" gate="G$1" pin="C"/>
+<wire x1="93.98" y1="167.64" x2="104.14" y2="167.64" width="0.1524" layer="91"/>
+<junction x="93.98" y="167.64"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
 <errors>
-<approved hash="104,1,25.4,81.28,IC5,VCC,3.3V,,,"/>
-<approved hash="104,1,134.62,231.14,U4,VDD,+5V,,,"/>
 <approved hash="113,1,124.356,92.606,FRAME1,,,,,"/>
 </errors>
 </schematic>
