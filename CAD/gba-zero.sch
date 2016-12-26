@@ -10189,13 +10189,13 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <attribute name="NAME" x="187.96" y="229.87" size="1.27" layer="95"/>
 <attribute name="VALUE" x="187.96" y="227.33" size="1.27" layer="96"/>
 </instance>
-<instance part="GND12" gate="1" x="127" y="193.04"/>
+<instance part="GND12" gate="1" x="111.76" y="195.58"/>
 <instance part="GND10" gate="1" x="111.76" y="223.52"/>
 <instance part="GND8" gate="1" x="83.82" y="228.6"/>
 <instance part="GND17" gate="1" x="160.02" y="193.04"/>
 <instance part="SUPPLY7" gate="+5V" x="119.38" y="233.68"/>
 <instance part="SUPPLY3" gate="+5V" x="83.82" y="241.3"/>
-<instance part="SUPPLY6" gate="+5V" x="111.76" y="200.66"/>
+<instance part="SUPPLY6" gate="+5V" x="132.08" y="198.12"/>
 <instance part="VCC5" gate="G$1" x="63.5" y="218.44"/>
 <instance part="GND6" gate="1" x="63.5" y="205.74"/>
 <instance part="R16" gate="G$1" x="116.84" y="144.78" smashed="yes" rot="R180">
@@ -10455,13 +10455,6 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <wire x1="187.96" y1="175.26" x2="187.96" y2="172.72" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="R17" gate="G$1" pin="3"/>
-<pinref part="R17" gate="G$1" pin="3O"/>
-<wire x1="127" y1="200.66" x2="127" y2="195.58" width="0.1524" layer="91"/>
-<pinref part="GND12" gate="1" pin="GND"/>
-<junction x="127" y="195.58"/>
-</segment>
-<segment>
 <pinref part="C10" gate="G$1" pin="P$2"/>
 <pinref part="GND14" gate="1" pin="GND"/>
 <pinref part="U5" gate="G$1" pin="GND@"/>
@@ -10483,6 +10476,10 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <pinref part="GND11" gate="G$1" pin="GND"/>
 <wire x1="119.38" y1="81.28" x2="124.46" y2="81.28" width="0.1524" layer="91"/>
 <junction x="119.38" y="81.28"/>
+</segment>
+<segment>
+<pinref part="R17" gate="G$1" pin="1"/>
+<pinref part="GND12" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="MISO" class="0">
@@ -11094,10 +11091,6 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <pinref part="C4" gate="G$1" pin="P$2"/>
 </segment>
 <segment>
-<pinref part="R17" gate="G$1" pin="1"/>
-<pinref part="SUPPLY6" gate="+5V" pin="+5V"/>
-</segment>
-<segment>
 <pinref part="U7" gate="G$1" pin="5V"/>
 <pinref part="SUPPLY11" gate="+5V" pin="+5V"/>
 <wire x1="203.2" y1="142.24" x2="203.2" y2="137.16" width="0.1524" layer="91"/>
@@ -11145,6 +11138,13 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <pinref part="D4" gate="G$1" pin="A"/>
 <pinref part="SUPPLY2" gate="+5V" pin="+5V"/>
 <wire x1="86.36" y1="175.26" x2="86.36" y2="172.72" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R17" gate="G$1" pin="3"/>
+<pinref part="R17" gate="G$1" pin="3O"/>
+<wire x1="127" y1="200.66" x2="127" y2="195.58" width="0.1524" layer="91"/>
+<pinref part="SUPPLY6" gate="+5V" pin="+5V"/>
+<wire x1="127" y1="195.58" x2="132.08" y2="195.58" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$21" class="0">
