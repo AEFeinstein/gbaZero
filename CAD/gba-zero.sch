@@ -10838,6 +10838,12 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <label x="195.58" y="147.32" size="1.778" layer="95"/>
 <pinref part="U7" gate="G$1" pin="LBO"/>
 </segment>
+<segment>
+<wire x1="160.02" y1="60.96" x2="172.72" y2="60.96" width="0.1524" layer="91"/>
+<pinref part="U6" gate="G$1" pin="GPIO5"/>
+<junction x="172.72" y="60.96"/>
+<label x="160.02" y="60.96" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="N$15" class="0">
 <segment>
