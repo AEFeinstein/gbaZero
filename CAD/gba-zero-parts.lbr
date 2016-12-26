@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -1462,28 +1462,28 @@ digikey: SC1488-1-nD</description>
 <description>&lt;b&gt;8-Lead Thin Shrink Small Outline Package &lt;/b&gt;&lt;p&gt;
 Source: http://www.analog.com/static/imported-files/data_sheets/AD8541_8542_8544.pdf</description>
 <wire x1="-0.6" y1="1.4484" x2="0.6" y2="1.4484" width="0.2032" layer="21" curve="180"/>
-<wire x1="-2.1484" y1="-1.4484" x2="2.1484" y2="-1.4484" width="0.2032" layer="21"/>
-<wire x1="2.1484" y1="-1.4484" x2="2.1484" y2="1.4484" width="0.2032" layer="21"/>
-<wire x1="2.1484" y1="1.4484" x2="-2.1484" y2="1.4484" width="0.2032" layer="21"/>
-<wire x1="-2.1484" y1="1.4484" x2="-2.1484" y2="-1.4484" width="0.2032" layer="21"/>
-<smd name="1" x="-2.875" y="0.975" dx="0.9" dy="0.35" layer="1"/>
-<smd name="2" x="-2.875" y="0.325" dx="0.9" dy="0.35" layer="1"/>
-<smd name="3" x="-2.875" y="-0.325" dx="0.9" dy="0.35" layer="1"/>
-<smd name="4" x="-2.875" y="-0.975" dx="0.9" dy="0.35" layer="1"/>
-<smd name="5" x="2.875" y="-0.975" dx="0.9" dy="0.35" layer="1" rot="R180"/>
-<smd name="6" x="2.875" y="-0.325" dx="0.9" dy="0.35" layer="1" rot="R180"/>
-<smd name="7" x="2.875" y="0.325" dx="0.9" dy="0.35" layer="1" rot="R180"/>
-<smd name="8" x="2.875" y="0.975" dx="0.9" dy="0.35" layer="1" rot="R180"/>
+<wire x1="-1.2484" y1="-1.4484" x2="1.2484" y2="-1.4484" width="0.2032" layer="21"/>
+<wire x1="1.2484" y1="-1.4484" x2="1.2484" y2="1.4484" width="0.2032" layer="21"/>
+<wire x1="1.2484" y1="1.4484" x2="-1.2484" y2="1.4484" width="0.2032" layer="21"/>
+<wire x1="-1.2484" y1="1.4484" x2="-1.2484" y2="-1.4484" width="0.2032" layer="21"/>
+<smd name="1" x="-1.975" y="0.975" dx="0.9" dy="0.35" layer="1"/>
+<smd name="2" x="-1.975" y="0.325" dx="0.9" dy="0.35" layer="1"/>
+<smd name="3" x="-1.975" y="-0.325" dx="0.9" dy="0.35" layer="1"/>
+<smd name="4" x="-1.975" y="-0.975" dx="0.9" dy="0.35" layer="1"/>
+<smd name="5" x="1.975" y="-0.975" dx="0.9" dy="0.35" layer="1" rot="R180"/>
+<smd name="6" x="1.975" y="-0.325" dx="0.9" dy="0.35" layer="1" rot="R180"/>
+<smd name="7" x="1.975" y="0.325" dx="0.9" dy="0.35" layer="1" rot="R180"/>
+<smd name="8" x="1.975" y="0.975" dx="0.9" dy="0.35" layer="1" rot="R180"/>
 <text x="-3.048" y="1.778" size="1.27" layer="25" font="vector">&gt;NAME</text>
 <text x="-3.048" y="-3.048" size="1.27" layer="27" font="vector">&gt;VALUE</text>
-<rectangle x1="-3.2" y1="0.825" x2="-2.25" y2="1.125" layer="51"/>
-<rectangle x1="-3.2" y1="0.175" x2="-2.25" y2="0.475" layer="51"/>
-<rectangle x1="-3.2" y1="-0.475" x2="-2.25" y2="-0.175" layer="51"/>
-<rectangle x1="-3.2" y1="-1.125" x2="-2.25" y2="-0.825" layer="51"/>
-<rectangle x1="2.25" y1="-1.125" x2="3.2" y2="-0.825" layer="51" rot="R180"/>
-<rectangle x1="2.25" y1="-0.475" x2="3.2" y2="-0.175" layer="51" rot="R180"/>
-<rectangle x1="2.25" y1="0.175" x2="3.2" y2="0.475" layer="51" rot="R180"/>
-<rectangle x1="2.25" y1="0.825" x2="3.2" y2="1.125" layer="51"/>
+<rectangle x1="-2.3" y1="0.825" x2="-1.35" y2="1.125" layer="51"/>
+<rectangle x1="-2.3" y1="0.175" x2="-1.35" y2="0.475" layer="51"/>
+<rectangle x1="-2.3" y1="-0.475" x2="-1.35" y2="-0.175" layer="51"/>
+<rectangle x1="-2.3" y1="-1.125" x2="-1.35" y2="-0.825" layer="51"/>
+<rectangle x1="1.35" y1="-1.125" x2="2.3" y2="-0.825" layer="51" rot="R180"/>
+<rectangle x1="1.35" y1="-0.475" x2="2.3" y2="-0.175" layer="51" rot="R180"/>
+<rectangle x1="1.35" y1="0.175" x2="2.3" y2="0.475" layer="51" rot="R180"/>
+<rectangle x1="1.35" y1="0.825" x2="2.3" y2="1.125" layer="51"/>
 </package>
 <package name="WL-SBCW-0606">
 <smd name="G" x="0.7" y="0.5" dx="0.7" dy="0.6" layer="1" rot="R90"/>
