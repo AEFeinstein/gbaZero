@@ -10623,6 +10623,11 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <wire x1="45.72" y1="83.82" x2="58.42" y2="83.82" width="0.1524" layer="91"/>
 <junction x="45.72" y="83.82"/>
 </segment>
+<segment>
+<wire x1="45.72" y1="68.58" x2="58.42" y2="68.58" width="0.1524" layer="91"/>
+<label x="45.72" y="68.58" size="1.778" layer="95"/>
+<pinref part="P1" gate="G$1" pin="TP_RES"/>
+</segment>
 </net>
 <net name="RT_INT" class="0">
 <segment>
@@ -10632,9 +10637,9 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <junction x="220.98" y="76.2"/>
 </segment>
 <segment>
-<wire x1="58.42" y1="76.2" x2="45.72" y2="76.2" width="0.1524" layer="91"/>
-<pinref part="P1" gate="G$1" pin="TP_SCK"/>
-<label x="45.72" y="76.2" size="1.778" layer="95"/>
+<wire x1="58.42" y1="71.12" x2="45.72" y2="71.12" width="0.1524" layer="91"/>
+<label x="45.72" y="71.12" size="1.778" layer="95"/>
+<pinref part="P1" gate="G$1" pin="TP_IRQ"/>
 </segment>
 </net>
 <net name="SCLK" class="0">
@@ -10674,9 +10679,9 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <junction x="172.72" y="93.98"/>
 </segment>
 <segment>
-<pinref part="P1" gate="G$1" pin="TP_RES"/>
-<wire x1="58.42" y1="68.58" x2="45.72" y2="68.58" width="0.1524" layer="91"/>
-<label x="45.72" y="68.58" size="1.778" layer="95"/>
+<wire x1="58.42" y1="73.66" x2="45.72" y2="73.66" width="0.1524" layer="91"/>
+<label x="45.72" y="73.66" size="1.778" layer="95"/>
+<pinref part="P1" gate="G$1" pin="TP_SDA"/>
 </segment>
 </net>
 <net name="SCL" class="0">
@@ -10687,9 +10692,9 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <junction x="172.72" y="91.44"/>
 </segment>
 <segment>
-<pinref part="P1" gate="G$1" pin="TP_SDA"/>
-<wire x1="58.42" y1="73.66" x2="45.72" y2="73.66" width="0.1524" layer="91"/>
-<label x="45.72" y="73.66" size="1.778" layer="95"/>
+<wire x1="58.42" y1="76.2" x2="45.72" y2="76.2" width="0.1524" layer="91"/>
+<label x="45.72" y="76.2" size="1.778" layer="95"/>
+<pinref part="P1" gate="G$1" pin="TP_SCK"/>
 </segment>
 </net>
 <net name="3.3V" class="0">

@@ -3167,16 +3167,22 @@ design rules under a new name.</description>
 <wire x1="72.898" y1="31.381740625" x2="71.259740625" y2="33.02" width="0.254" layer="1"/>
 <wire x1="71.259740625" y1="33.02" x2="67.287559375" y2="33.02" width="0.254" layer="1"/>
 <wire x1="67.287559375" y1="33.02" x2="66.573359375" y2="32.3058" width="0.254" layer="1"/>
+<contactref element="P1" pad="47"/>
+<via x="56.642" y="50.8" extent="1-16" drill="0.6" shape="square"/>
+<wire x1="56.642" y1="50.8" x2="56.642" y2="32.3058" width="0.254" layer="16"/>
+<via x="56.642" y="32.3058" extent="1-16" drill="0.6" shape="square"/>
+<wire x1="56.642" y1="32.3058" x2="57.9204" y2="32.3058" width="0.254" layer="1"/>
+<wire x1="57.9204" y1="50.8058" x2="57.9204" y2="50.8" width="0.254" layer="1"/>
+<wire x1="57.9204" y1="50.8" x2="56.642" y2="50.8" width="0.254" layer="1"/>
 </signal>
 <signal name="RT_INT">
-<contactref element="P1" pad="44"/>
 <contactref element="U6" pad="18"/>
 <wire x1="63.1952" y1="35.8775" x2="64.516" y2="37.1983" width="0.254" layer="16"/>
-<wire x1="64.516" y1="37.1983" x2="64.516" y2="49.784" width="0.254" layer="16"/>
-<via x="64.516" y="49.784" extent="1-16" drill="0.6" shape="square"/>
-<wire x1="64.516" y1="49.784" x2="59.944" y2="49.784" width="0.254" layer="1"/>
-<wire x1="59.944" y1="49.784" x2="59.4658" y2="49.3058" width="0.254" layer="1"/>
-<wire x1="59.4658" y1="49.3058" x2="57.9204" y2="49.3058" width="0.254" layer="1"/>
+<wire x1="64.516" y1="37.1983" x2="64.516" y2="50.292" width="0.254" layer="16"/>
+<contactref element="P1" pad="46"/>
+<wire x1="57.9204" y1="50.3058" x2="64.516" y2="50.3058" width="0.254" layer="1"/>
+<wire x1="64.516" y1="50.3058" x2="64.516" y2="50.292" width="0.254" layer="1"/>
+<via x="64.516" y="50.292" extent="1-16" drill="0.6" shape="square"/>
 </signal>
 <signal name="SCLK">
 <contactref element="P1" pad="37"/>
@@ -3204,18 +3210,20 @@ design rules under a new name.</description>
 <wire x1="78.066" y1="19.558" x2="57.15" y2="19.558" width="0.254" layer="1"/>
 </signal>
 <signal name="SDA">
-<contactref element="P1" pad="47"/>
 <contactref element="U6" pad="3"/>
-<wire x1="57.9204" y1="50.8058" x2="45.4152" y2="50.8058" width="0.254" layer="1"/>
-<via x="45.4152" y="50.8058" extent="1-16" drill="0.6" shape="square"/>
-<wire x1="45.4152" y1="50.8058" x2="45.4152" y2="41.3385" width="0.254" layer="16"/>
+<via x="45.4152" y="49.7898" extent="1-16" drill="0.6" shape="square"/>
+<wire x1="45.4152" y1="49.7898" x2="45.4152" y2="41.3385" width="0.254" layer="16"/>
+<contactref element="P1" pad="45"/>
+<wire x1="57.9204" y1="49.8058" x2="45.4152" y2="49.8058" width="0.254" layer="1"/>
+<wire x1="45.4152" y1="49.8058" x2="45.4152" y2="49.7898" width="0.254" layer="1"/>
 </signal>
 <signal name="SCL">
-<contactref element="P1" pad="45"/>
 <contactref element="U6" pad="5"/>
-<wire x1="57.9204" y1="49.8058" x2="47.9552" y2="49.8058" width="0.254" layer="1"/>
-<via x="47.9552" y="49.8058" extent="1-16" drill="0.6" shape="square"/>
-<wire x1="47.9552" y1="49.8058" x2="47.9552" y2="41.3385" width="0.254" layer="16"/>
+<via x="47.9552" y="49.0438" extent="1-16" drill="0.6" shape="square"/>
+<wire x1="47.9552" y1="49.0438" x2="47.9552" y2="41.3385" width="0.254" layer="16"/>
+<contactref element="P1" pad="44"/>
+<wire x1="57.9204" y1="49.3058" x2="47.9552" y2="49.3058" width="0.254" layer="1"/>
+<wire x1="47.9552" y1="49.3058" x2="47.9552" y2="49.0438" width="0.254" layer="1"/>
 </signal>
 <signal name="3.3V">
 <contactref element="R8" pad="2"/>
