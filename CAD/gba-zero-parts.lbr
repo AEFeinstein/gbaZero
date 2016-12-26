@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -1474,8 +1474,8 @@ Source: http://www.analog.com/static/imported-files/data_sheets/AD8541_8542_8544
 <smd name="6" x="1.975" y="-0.325" dx="0.9" dy="0.35" layer="1" rot="R180"/>
 <smd name="7" x="1.975" y="0.325" dx="0.9" dy="0.35" layer="1" rot="R180"/>
 <smd name="8" x="1.975" y="0.975" dx="0.9" dy="0.35" layer="1" rot="R180"/>
-<text x="-3.048" y="1.778" size="1.27" layer="25" font="vector">&gt;NAME</text>
-<text x="-3.048" y="-3.048" size="1.27" layer="27" font="vector">&gt;VALUE</text>
+<text x="-2.413" y="1.778" size="1.016" layer="25" font="vector" ratio="18">&gt;NAME</text>
+<text x="-2.413" y="-3.048" size="1.016" layer="27" font="vector" ratio="18">&gt;VALUE</text>
 <rectangle x1="-2.3" y1="0.825" x2="-1.35" y2="1.125" layer="51"/>
 <rectangle x1="-2.3" y1="0.175" x2="-1.35" y2="0.475" layer="51"/>
 <rectangle x1="-2.3" y1="-0.475" x2="-1.35" y2="-0.175" layer="51"/>
@@ -1708,7 +1708,7 @@ Source: http://www.analog.com/static/imported-files/data_sheets/AD8541_8542_8544
 <wire x1="-25.6493" y1="-26.5049" x2="-25.8993" y2="-27.0049" width="0.127" layer="51"/>
 <wire x1="-25.8993" y1="-27.0049" x2="-17.8993" y2="-27.0049" width="0.127" layer="51"/>
 <wire x1="-17.8993" y1="-27.0049" x2="-18.1493" y2="-26.5049" width="0.127" layer="51"/>
-<text x="-26.9868" y="-4.1324" size="1.016" layer="21" font="vector" ratio="10">1</text>
+<text x="-26.9868" y="-4.1324" size="1.016" layer="21" font="vector" ratio="18">1</text>
 <wire x1="4.4007" y1="-26.5049" x2="5.2507" y2="-26.5049" width="0.254" layer="51"/>
 <wire x1="5.2507" y1="-26.5049" x2="12.7507" y2="-26.5049" width="0.254" layer="51"/>
 <wire x1="5.2507" y1="-26.5049" x2="5.2507" y2="-20.7549" width="0.127" layer="51"/>
@@ -1725,7 +1725,7 @@ Source: http://www.analog.com/static/imported-files/data_sheets/AD8541_8542_8544
 <wire x1="17.8507" y1="-26.5049" x2="17.6007" y2="-27.0049" width="0.127" layer="51"/>
 <wire x1="17.6007" y1="-27.0049" x2="25.6007" y2="-27.0049" width="0.127" layer="51"/>
 <wire x1="25.6007" y1="-27.0049" x2="25.3507" y2="-26.5049" width="0.127" layer="51"/>
-<text x="-26.9868" y="2.2176" size="1.016" layer="21" font="vector" ratio="10">2</text>
+<text x="-26.9868" y="2.2176" size="1.016" layer="21" font="vector" ratio="18">2</text>
 </package>
 <package name="SO-8">
 <wire x1="1.9" y1="-2.4" x2="-1.4" y2="-2.4" width="0.2032" layer="21"/>
@@ -1743,8 +1743,8 @@ Source: http://www.analog.com/static/imported-files/data_sheets/AD8541_8542_8544
 <smd name="8" x="2.6" y="1.905" dx="0.6" dy="2.2" layer="1" rot="R270"/>
 <smd name="6" x="2.6" y="-0.635" dx="0.6" dy="2.2" layer="1" rot="R270"/>
 <smd name="5" x="2.6" y="-1.905" dx="0.6" dy="2.2" layer="1" rot="R270"/>
-<text x="-1.905" y="2.921" size="1.27" layer="25" font="vector">&gt;NAME</text>
-<text x="-1.905" y="-4.191" size="1.27" layer="27" font="vector">&gt;VALUE</text>
+<text x="-1.905" y="2.921" size="1.016" layer="25" font="vector" ratio="18">&gt;NAME</text>
+<text x="-1.905" y="-4.191" size="1.016" layer="27" font="vector" ratio="18">&gt;VALUE</text>
 <circle x="-0.9398" y="1.905" radius="0.254" width="0" layer="21"/>
 <wire x1="0.381" y1="2.3622" x2="-0.381" y2="2.3622" width="0.127" layer="21" curve="-180"/>
 </package>
