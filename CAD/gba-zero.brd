@@ -990,10 +990,6 @@ Thanks for the calipers</text>
 <wire x1="6" y1="0" x2="6" y2="3.9" width="0.127" layer="51"/>
 </package>
 <package name="SHOULDER_BUTTON">
-<pad name="GND@1" x="-4.4958" y="0" drill="1.27"/>
-<pad name="GND@3" x="4.4958" y="0" drill="1.27"/>
-<pad name="GND@2" x="-2.2098" y="2.4384" drill="0.889"/>
-<pad name="SW" x="2.2098" y="2.4384" drill="0.889"/>
 <wire x1="-0.635" y1="-2.6162" x2="0.635" y2="-2.6162" width="0" layer="20"/>
 <wire x1="1.27" y1="-1.9812" x2="1.27" y2="0.5588" width="0" layer="20"/>
 <wire x1="0.635" y1="1.1938" x2="-0.635" y2="1.1938" width="0" layer="20"/>
@@ -1002,6 +998,10 @@ Thanks for the calipers</text>
 <wire x1="0.635" y1="1.1938" x2="1.27" y2="0.5588" width="0" layer="20" curve="-90"/>
 <wire x1="-1.27" y1="-1.9812" x2="-0.635" y2="-2.6162" width="0" layer="20" curve="90"/>
 <wire x1="0.635" y1="-2.6162" x2="1.27" y2="-1.9812" width="0" layer="20" curve="90"/>
+<pad name="GND@2" x="-2.25" y="2.5" drill="1.1"/>
+<pad name="SW" x="2.25" y="2.5" drill="1.1"/>
+<pad name="GND@1" x="-3.5" y="0" drill="1.4"/>
+<pad name="GND@3" x="3.5" y="0" drill="1.4"/>
 </package>
 <package name="START_SELECT_BUTTON">
 <smd name="GND@1" x="-0.919084375" y="-3.262753125" dx="0.229771875" dy="0.229771875" layer="1" rot="R45"/>
@@ -3036,10 +3036,6 @@ design rules under a new name.</description>
 <vertex x="132.588" y="72.898"/>
 <vertex x="0" y="72.898"/>
 </polygon>
-<contactref element="S2" pad="GND@2"/>
-<contactref element="S2" pad="GND@3"/>
-<contactref element="S3" pad="GND@2"/>
-<contactref element="S3" pad="GND@3"/>
 <contactref element="C1" pad="2"/>
 <contactref element="C3" pad="2"/>
 <contactref element="C2" pad="1"/>
@@ -3052,6 +3048,10 @@ design rules under a new name.</description>
 <contactref element="R17" pad="1"/>
 <contactref element="C7" pad="2"/>
 <contactref element="R12" pad="1"/>
+<contactref element="S2" pad="GND@2"/>
+<contactref element="S2" pad="GND@3"/>
+<contactref element="S3" pad="GND@2"/>
+<contactref element="S3" pad="GND@3"/>
 </signal>
 <signal name="MISO">
 <contactref element="P1" pad="33"/>
@@ -3396,10 +3396,10 @@ design rules under a new name.</description>
 <signal name="BTN_LS">
 <contactref element="U6" pad="7"/>
 <contactref element="S2" pad="SW"/>
-<wire x1="12.064765625" y1="60.27348125" x2="13.259284375" y2="61.468" width="0.254" layer="1"/>
-<wire x1="13.259284375" y1="61.468" x2="50.4952" y2="61.468" width="0.254" layer="1"/>
+<wire x1="13.220534375" y1="61.468" x2="50.4952" y2="61.468" width="0.254" layer="1"/>
 <via x="50.4952" y="61.468" extent="1-16" drill="0.6" shape="square"/>
 <wire x1="50.4952" y1="61.468" x2="50.4952" y2="42.1005" width="0.254" layer="16"/>
+<wire x1="13.220534375" y1="61.468" x2="12.093659375" y2="60.341125" width="0.254" layer="1"/>
 </signal>
 <signal name="BTN_RS">
 <contactref element="S3" pad="SW"/>
@@ -3408,8 +3408,11 @@ design rules under a new name.</description>
 <wire x1="88.646" y1="42.1005" x2="88.646" y2="45.2882" width="0.254" layer="16"/>
 <via x="88.646" y="45.2882" extent="1-16" drill="0.6" shape="square"/>
 <wire x1="88.646" y1="45.2882" x2="118.4402" y2="45.2882" width="0.254" layer="1"/>
-<wire x1="118.4402" y1="45.2882" x2="126.149890625" y2="52.997890625" width="0.254" layer="1"/>
-<wire x1="126.149890625" y1="52.997890625" x2="126.149890625" y2="59.27094375" width="0.254" layer="1"/>
+<wire x1="126.149890625" y1="59.27094375" x2="126.149890625" y2="58.077890625" width="0.254" layer="1"/>
+<wire x1="126.149890625" y1="58.077890625" x2="125.476" y2="57.404" width="0.254" layer="1"/>
+<wire x1="125.476" y1="57.404" x2="125.476" y2="52.324" width="0.254" layer="1"/>
+<wire x1="125.476" y1="52.324" x2="118.4402" y2="45.2882" width="0.254" layer="1"/>
+<wire x1="126.149890625" y1="59.27094375" x2="126.200178125" y2="59.324628125" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="BTN_L">
 <contactref element="U6" pad="13"/>
