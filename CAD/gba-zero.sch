@@ -2471,8 +2471,8 @@ LETTER landscape</description>
 <pad name="3" x="0" y="2.159" drill="0.8382"/>
 <pad name="1" x="-2.159" y="2.159" drill="0.8382"/>
 <pad name="2" x="-2.159" y="0" drill="0.8382"/>
-<pad name="GND@1" x="-5.1054" y="2.413" drill="1.397" diameter="1.651" shape="long" rot="R270"/>
-<pad name="GND@2" x="5.1054" y="2.413" drill="1.397" diameter="1.651" shape="long" rot="R270"/>
+<pad name="GND@1" x="-5.1054" y="2.413" drill="1.397" diameter="1.905" rot="R270"/>
+<pad name="GND@2" x="5.1054" y="2.413" drill="1.397" diameter="1.905" rot="R270"/>
 </package>
 <package name="PWR-SWITCH">
 <smd name="L" x="-4.0132" y="2.3241" dx="1.143" dy="1.6002" layer="1"/>

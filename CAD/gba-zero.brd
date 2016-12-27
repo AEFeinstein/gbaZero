@@ -182,10 +182,8 @@
 </layers>
 <board>
 <plain>
-<wire x1="45.959440625" y1="71.8284" x2="69.21543125" y2="71.8284" width="0" layer="20"/>
-<wire x1="69.21543125" y1="71.8284" x2="69.21543125" y2="72.753728125" width="0" layer="20"/>
-<wire x1="69.21543125" y1="72.753728125" x2="82.19236875" y2="72.753728125" width="0" layer="20"/>
-<wire x1="82.19236875" y1="72.753728125" x2="82.19236875" y2="67.850009375" width="0" layer="20"/>
+<wire x1="45.959440625" y1="71.8284" x2="82.19236875" y2="71.8284" width="0" layer="20"/>
+<wire x1="82.19236875" y1="71.8284" x2="82.19236875" y2="67.850009375" width="0" layer="20"/>
 <wire x1="82.19236875" y1="67.850009375" x2="85.381309375" y2="67.850009375" width="0" layer="20"/>
 <wire x1="85.381309375" y1="67.850009375" x2="85.381309375" y2="71.889340625" width="0" layer="20"/>
 <wire x1="85.381309375" y1="71.889340625" x2="88.16141875" y2="71.889340625" width="0" layer="20"/>
@@ -316,8 +314,6 @@
 <hole x="13.641596875" y="27.388421875" drill="2.5"/>
 <hole x="120.9808375" y="37.2345625" drill="2.5"/>
 <hole x="115.854896875" y="47.952840625" drill="3.8"/>
-<hole x="126.78759375" y="32.478265625" drill="4"/>
-<hole x="6.13759375" y="28.588890625" drill="4"/>
 <circle x="113.0755" y="61.42" radius="2.6924" width="1.016" layer="51"/>
 <circle x="112.029784375" y="56.711425" radius="3.3528" width="0.0127" layer="22"/>
 <circle x="21.69509375" y="56.767015625" radius="3.3528" width="0.0127" layer="22"/>
@@ -330,6 +326,8 @@ For Saba
 Thanks for the calipers</text>
 <text x="130.048" y="26.67" size="1.016" layer="26" font="vector" ratio="18" rot="R90">VO1</text>
 <text x="130.048" y="22.606" size="1.016" layer="26" font="vector" ratio="18" rot="R90">VO2</text>
+<hole x="5.37559375" y="28.842890625" drill="2.54"/>
+<hole x="128.31159375" y="32.732265625" drill="2.54"/>
 </plain>
 <libraries>
 <library name="adafruit">
@@ -963,8 +961,8 @@ Thanks for the calipers</text>
 <pad name="3" x="0" y="2.159" drill="0.8382"/>
 <pad name="1" x="-2.159" y="2.159" drill="0.8382"/>
 <pad name="2" x="-2.159" y="0" drill="0.8382"/>
-<pad name="GND@1" x="-5.1054" y="2.413" drill="1.397" diameter="1.651" shape="long" rot="R270"/>
-<pad name="GND@2" x="5.1054" y="2.413" drill="1.397" diameter="1.651" shape="long" rot="R270"/>
+<pad name="GND@1" x="-5.1054" y="2.413" drill="1.397" diameter="1.905" rot="R270"/>
+<pad name="GND@2" x="5.1054" y="2.413" drill="1.397" diameter="1.905" rot="R270"/>
 </package>
 <package name="PWR-SWITCH">
 <smd name="L" x="-4.0132" y="2.3241" dx="1.143" dy="1.6002" layer="1"/>
