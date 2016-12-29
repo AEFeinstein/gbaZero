@@ -2951,20 +2951,18 @@ design rules under a new name.</description>
 </element>
 <element name="R9" library="microbuilder" package="0603" value="220" x="105.41" y="45.212" rot="MR0"/>
 <element name="R10" library="microbuilder" package="0603" value="100" x="105.41" y="41.656" rot="MR0"/>
-<element name="R12" library="microbuilder" package="0603" value="1.8K" x="105.41" y="38.1" rot="MR0"/>
 <element name="R20" library="microbuilder" package="0603" value="150" x="108.92028125" y="14.0335" rot="MR250"/>
 <element name="P2" library="gba-zero-parts" package="JSTPH2" value="" x="26.908759375" y="45.849540625" locked="yes" rot="MR180"/>
 <element name="C1" library="microbuilder" package="0603" value="0.1μF" x="102.616" y="50.038" rot="MR180"/>
 <element name="C3" library="microbuilder" package="0603" value="0.1μF" x="105.41" y="43.434" rot="MR0"/>
 <element name="C5" library="microbuilder" package="0603" value="47μF" x="105.41" y="39.878" rot="MR0"/>
-<element name="C10" library="microbuilder" package="0603" value="1.0μF" x="112.268" y="31.496" rot="MR180"/>
-<element name="C7" library="microbuilder" package="0603" value="1.0μF" x="100.33" y="30.0736" rot="MR0"/>
+<element name="C10" library="microbuilder" package="0603" value="10μF" x="112.268" y="31.496" rot="MR180"/>
+<element name="C7" library="microbuilder" package="0603" value="0.1μF" x="100.33" y="30.0736" rot="MR0"/>
 <element name="C2" library="microbuilder" package="0603" value="10μF" x="119.634" y="43.688" rot="MR0"/>
 <element name="C4" library="microbuilder" package="0603" value="10μF" x="119.634" y="41.402" rot="MR0"/>
 <element name="C13" library="microbuilder" package="PANASONIC_D" value="100μF" x="109.728" y="22.352" rot="MR90"/>
 <element name="U5" library="gba-zero-parts" package="SO-8" value="LM4875" x="106.426" y="32.004" rot="MR180"/>
 <element name="R11" library="microbuilder" package="0603" value="100K" x="104.14" y="23.368" rot="MR90"/>
-<element name="R13" library="microbuilder" package="0603" value="100K" x="102.108" y="23.368" rot="MR90"/>
 <element name="C6" library="microbuilder" package="0603" value="10μF" x="62.865" y="35.3822" rot="R90"/>
 <element name="C8" library="microbuilder" package="0603" value="0.1μF" x="64.897" y="35.3822" rot="R90"/>
 <element name="C9" library="microbuilder" package="0603" value="10μF" x="67.945" y="26.416"/>
@@ -2972,6 +2970,7 @@ design rules under a new name.</description>
 <element name="R3" library="microbuilder" package="0603" value="0" x="76.962" y="32.258"/>
 <element name="D4" library="microbuilder" package="SOD-323" value="1N4148" x="97.028" y="65.024" rot="MR90"/>
 <element name="D5" library="microbuilder" package="SOD-323" value="1N4148" x="93.472" y="62.738" rot="MR270"/>
+<element name="C15" library="microbuilder" package="0603" value="10μF" x="100.33" y="28.448" rot="MR0"/>
 </elements>
 <signals>
 <signal name="GND">
@@ -3047,11 +3046,11 @@ design rules under a new name.</description>
 <contactref element="C8" pad="2"/>
 <contactref element="R17" pad="1"/>
 <contactref element="C7" pad="2"/>
-<contactref element="R12" pad="1"/>
 <contactref element="S2" pad="GND@2"/>
 <contactref element="S2" pad="GND@3"/>
 <contactref element="S3" pad="GND@2"/>
 <contactref element="S3" pad="GND@3"/>
+<contactref element="C15" pad="2"/>
 </signal>
 <signal name="MISO">
 <contactref element="P1" pad="33"/>
@@ -3604,6 +3603,8 @@ design rules under a new name.</description>
 <wire x1="101.18" y1="30.099" x2="101.18" y2="30.0736" width="0.8128" layer="16"/>
 <wire x1="97.028" y1="66.294" x2="93.726" y2="66.294" width="0.6096" layer="16"/>
 <wire x1="93.726" y1="66.294" x2="93.472" y2="66.04" width="0.6096" layer="16"/>
+<contactref element="C15" pad="1"/>
+<wire x1="101.18" y1="28.448" x2="101.18" y2="30.0736" width="0.8128" layer="16"/>
 <wire x1="103.865" y1="30.138" x2="103.826" y2="30.099" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="N$21">
@@ -3636,13 +3637,6 @@ design rules under a new name.</description>
 <wire x1="109.211" y1="13.234759375" x2="109.728" y2="13.751759375" width="0.254" layer="16"/>
 <wire x1="109.728" y1="13.751759375" x2="109.728" y2="19.698" width="0.254" layer="16"/>
 <wire x1="100.506040625" y1="11.87073125" x2="110.72820625" y2="7.995834375" width="0.254" layer="16"/>
-</signal>
-<signal name="N$22">
-<contactref element="J1" pad="5"/>
-<contactref element="R13" pad="1"/>
-<contactref element="R11" pad="1"/>
-<wire x1="104.14" y1="22.518" x2="102.108" y2="22.518" width="0.254" layer="16"/>
-<wire x1="103.82670625" y1="17.674475" x2="102.108" y2="22.518" width="0.254" layer="16"/>
 </signal>
 <signal name="AUD_PWM">
 <contactref element="U6" pad="33"/>
@@ -3779,11 +3773,14 @@ design rules under a new name.</description>
 </signal>
 <signal name="SENSE">
 <contactref element="U5" pad="3"/>
-<contactref element="R13" pad="2"/>
-<wire x1="102.108" y1="24.218" x2="100.33" y2="25.996" width="0.254" layer="16"/>
-<wire x1="100.33" y1="25.996" x2="100.33" y2="31.242" width="0.254" layer="16"/>
 <wire x1="100.33" y1="31.242" x2="101.727" y2="32.639" width="0.254" layer="16"/>
 <wire x1="101.727" y1="32.639" x2="103.826" y2="32.639" width="0.254" layer="16"/>
+<contactref element="J1" pad="5"/>
+<contactref element="R11" pad="1"/>
+<wire x1="104.14" y1="22.518" x2="100.33" y2="26.328" width="0.254" layer="16"/>
+<wire x1="100.33" y1="26.328" x2="100.33" y2="31.242" width="0.254" layer="16"/>
+<wire x1="104.14" y1="22.518" x2="104.14" y2="17.674475" width="0.254" layer="16"/>
+<wire x1="104.14" y1="17.674475" x2="103.82670625" y2="17.674475" width="0.254" layer="16"/>
 </signal>
 <signal name="N$19">
 <contactref element="U3" pad="8"/>
@@ -3803,14 +3800,12 @@ design rules under a new name.</description>
 </signal>
 <signal name="N$23">
 <contactref element="C5" pad="2"/>
-<contactref element="R12" pad="2"/>
 <contactref element="U5" pad="2"/>
-<wire x1="104.56" y1="39.878" x2="104.56" y2="38.1" width="0.254" layer="16"/>
-<wire x1="104.56" y1="38.1" x2="105.4862" y2="37.1738" width="0.254" layer="16"/>
-<wire x1="105.4862" y1="37.1738" x2="105.4862" y2="32.0802" width="0.254" layer="16"/>
+<wire x1="105.4862" y1="38.9518" x2="105.4862" y2="32.0802" width="0.254" layer="16"/>
 <wire x1="105.4862" y1="32.0802" x2="104.902" y2="31.496" width="0.254" layer="16"/>
 <wire x1="104.902" y1="31.496" x2="103.953" y2="31.496" width="0.254" layer="16"/>
 <wire x1="103.953" y1="31.496" x2="103.826" y2="31.369" width="0.254" layer="16"/>
+<wire x1="105.4862" y1="38.9518" x2="104.56" y2="39.878" width="0.254" layer="16"/>
 </signal>
 </signals>
 </board>
