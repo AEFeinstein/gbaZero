@@ -2026,7 +2026,7 @@ LETTER landscape</description>
 </package>
 <package name="D-PAD">
 <circle x="0" y="7.96158125" radius="2.99851875" width="0.25275" layer="21"/>
-<circle x="0" y="0" radius="4.526496875" width="0" layer="22"/>
+<circle x="0" y="0" radius="4.526496875" width="0" layer="51"/>
 <circle x="7.96158125" y="0" radius="2.99851875" width="0.25275" layer="21"/>
 <circle x="0" y="-7.96158125" radius="2.99851875" width="0.25275" layer="21"/>
 <polygon width="0.1524" layer="1">
@@ -2500,6 +2500,10 @@ LETTER landscape</description>
 <wire x1="6" y1="0" x2="6" y2="3.9" width="0.127" layer="51"/>
 </package>
 <package name="SHOULDER_BUTTON">
+<pad name="GND@1" x="-3.5" y="0" drill="1.4"/>
+<pad name="GND@3" x="3.5" y="0" drill="1.4"/>
+<pad name="GND@2" x="-2.25" y="2.5" drill="1.1"/>
+<pad name="SW" x="2.25" y="2.5" drill="1.1"/>
 <wire x1="-0.635" y1="-2.6162" x2="0.635" y2="-2.6162" width="0" layer="20"/>
 <wire x1="1.27" y1="-1.9812" x2="1.27" y2="0.5588" width="0" layer="20"/>
 <wire x1="0.635" y1="1.1938" x2="-0.635" y2="1.1938" width="0" layer="20"/>
@@ -2508,10 +2512,6 @@ LETTER landscape</description>
 <wire x1="0.635" y1="1.1938" x2="1.27" y2="0.5588" width="0" layer="20" curve="-90"/>
 <wire x1="-1.27" y1="-1.9812" x2="-0.635" y2="-2.6162" width="0" layer="20" curve="90"/>
 <wire x1="0.635" y1="-2.6162" x2="1.27" y2="-1.9812" width="0" layer="20" curve="90"/>
-<pad name="GND@2" x="-2.25" y="2.5" drill="1.1"/>
-<pad name="SW" x="2.25" y="2.5" drill="1.1"/>
-<pad name="GND@1" x="-3.5" y="0" drill="1.4"/>
-<pad name="GND@3" x="3.5" y="0" drill="1.4"/>
 </package>
 <package name="START_SELECT_BUTTON">
 <smd name="GND@1" x="-0.919084375" y="-3.262753125" dx="0.229771875" dy="0.229771875" layer="1" rot="R45"/>
@@ -2670,8 +2670,8 @@ Source: http://www.analog.com/static/imported-files/data_sheets/AD8541_8542_8544
 <wire x1="0.55" y1="0.8" x2="0.55" y2="-0.8" width="0.127" layer="51"/>
 </package>
 <package name="AB_BUTTON">
-<circle x="6.5484875" y="2.240271875" radius="2.26325" width="0" layer="22"/>
-<circle x="-6.5484875" y="-2.240271875" radius="2.26325" width="0" layer="22"/>
+<circle x="6.5484875" y="2.240271875" radius="2.26325" width="0" layer="51"/>
+<circle x="-6.5484875" y="-2.240271875" radius="2.26325" width="0" layer="51"/>
 <polygon width="0.1524" layer="1">
 <vertex x="-7.950090625" y="-5.261765625"/>
 <vertex x="-7.122915625" y="-5.4915375"/>
@@ -2728,7 +2728,6 @@ Source: http://www.analog.com/static/imported-files/data_sheets/AD8541_8542_8544
 <smd name="GND@2" x="-4.1358875" y="-2.182828125" dx="1.14885625" dy="0.574428125" layer="1" rot="R90"/>
 <smd name="B@2" x="-5.675353125" y="0.114884375" dx="1.14885625" dy="0.574428125" layer="1" rot="R77"/>
 <smd name="GND@1" x="-7.398640625" y="-4.6873375" dx="1.14885625" dy="0.574428125" layer="1" rot="R77"/>
-<circle x="6.5484875" y="2.240271875" radius="2.26325" width="0" layer="22"/>
 <polygon width="0.1524" layer="1">
 <vertex x="5.14688125" y="-0.781221875"/>
 <vertex x="5.97405625" y="-1.01099375"/>
@@ -10068,6 +10067,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <part name="D4" library="microbuilder" deviceset="DIODE" device="SOD-323" value="1N4148"/>
 <part name="D5" library="microbuilder" deviceset="DIODE" device="SOD-323" value="1N4148"/>
 <part name="C15" library="microbuilder" deviceset="CAP_CERAMIC" device="0603" value="10μF"/>
+<part name="R12" library="microbuilder" deviceset="RESISTOR" device="0603" value="0"/>
 </parts>
 <sheets>
 <sheet>
@@ -10263,6 +10263,10 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <instance part="C15" gate="G$1" x="114.3" y="233.68" smashed="yes" rot="R270">
 <attribute name="NAME" x="116.84" y="237.998" size="1.27" layer="95" font="vector" rot="R270"/>
 <attribute name="VALUE" x="113.284" y="239.776" size="1.27" layer="96" font="vector" rot="R270"/>
+</instance>
+<instance part="R12" gate="G$1" x="40.64" y="68.58" smashed="yes">
+<attribute name="NAME" x="38.1" y="70.612" size="1.27" layer="95" font="vector"/>
+<attribute name="VALUE" x="38.862" y="67.945" size="1.27" layer="96" font="vector"/>
 </instance>
 </instances>
 <busses>
@@ -10619,9 +10623,10 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <junction x="45.72" y="83.82"/>
 </segment>
 <segment>
-<wire x1="45.72" y1="68.58" x2="58.42" y2="68.58" width="0.1524" layer="91"/>
-<label x="45.72" y="68.58" size="1.778" layer="95"/>
-<pinref part="P1" gate="G$1" pin="TP_RES"/>
+<wire x1="25.4" y1="68.58" x2="35.56" y2="68.58" width="0.1524" layer="91"/>
+<label x="25.4" y="68.58" size="1.778" layer="95"/>
+<pinref part="R12" gate="G$1" pin="1"/>
+<junction x="35.56" y="68.58"/>
 </segment>
 </net>
 <net name="RT_INT" class="0">
@@ -11354,6 +11359,13 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <pinref part="C5" gate="G$1" pin="P$2"/>
 <pinref part="U5" gate="G$1" pin="IN-"/>
 <wire x1="99.06" y1="218.44" x2="119.38" y2="218.44" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$22" class="0">
+<segment>
+<pinref part="P1" gate="G$1" pin="TP_RES"/>
+<pinref part="R12" gate="G$1" pin="2"/>
+<wire x1="45.72" y1="68.58" x2="58.42" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

@@ -319,15 +319,20 @@
 <circle x="21.69509375" y="56.767015625" radius="3.3528" width="0.0127" layer="22"/>
 <wire x1="36.203840625" y1="24.13" x2="36.203840625" y2="7.68698125" width="0" layer="20"/>
 <wire x1="98.2533625" y1="24.13" x2="36.203840625" y2="24.13" width="0" layer="20"/>
-<text x="28.448" y="37.338" size="1.2192" layer="25" font="vector" ratio="18">gbaZero rev.B
-Adam Feinstein
+<text x="21.59" y="32.512" size="1.2192" layer="26" font="vector" ratio="18" rot="MR0">Adam Feinstein
 (C) 1/2017
+Audio fixed by
+  Dr. Adam T. Barth
+Mech help from
+  Scott Downen
 For Saba
-Thanks for the calipers</text>
+  Thanks for the
+  calipers</text>
 <text x="130.048" y="26.67" size="1.016" layer="26" font="vector" ratio="18" rot="R90">VO1</text>
 <text x="130.048" y="22.606" size="1.016" layer="26" font="vector" ratio="18" rot="R90">VO2</text>
 <hole x="5.37559375" y="28.842890625" drill="2.54"/>
 <hole x="128.31159375" y="32.732265625" drill="2.54"/>
+<text x="21.59" y="49.022" size="1.6256" layer="26" font="vector" ratio="18" rot="MR0">gbaZero rev.B</text>
 </plain>
 <libraries>
 <library name="adafruit">
@@ -516,7 +521,7 @@ Thanks for the calipers</text>
 </package>
 <package name="D-PAD">
 <circle x="0" y="7.96158125" radius="2.99851875" width="0.25275" layer="21"/>
-<circle x="0" y="0" radius="4.526496875" width="0" layer="22"/>
+<circle x="0" y="0" radius="4.526496875" width="0" layer="51"/>
 <circle x="7.96158125" y="0" radius="2.99851875" width="0.25275" layer="21"/>
 <circle x="0" y="-7.96158125" radius="2.99851875" width="0.25275" layer="21"/>
 <polygon width="0.1524" layer="1">
@@ -990,6 +995,10 @@ Thanks for the calipers</text>
 <wire x1="6" y1="0" x2="6" y2="3.9" width="0.127" layer="51"/>
 </package>
 <package name="SHOULDER_BUTTON">
+<pad name="GND@1" x="-3.5" y="0" drill="1.4"/>
+<pad name="GND@3" x="3.5" y="0" drill="1.4"/>
+<pad name="GND@2" x="-2.25" y="2.5" drill="1.1"/>
+<pad name="SW" x="2.25" y="2.5" drill="1.1"/>
 <wire x1="-0.635" y1="-2.6162" x2="0.635" y2="-2.6162" width="0" layer="20"/>
 <wire x1="1.27" y1="-1.9812" x2="1.27" y2="0.5588" width="0" layer="20"/>
 <wire x1="0.635" y1="1.1938" x2="-0.635" y2="1.1938" width="0" layer="20"/>
@@ -998,10 +1007,6 @@ Thanks for the calipers</text>
 <wire x1="0.635" y1="1.1938" x2="1.27" y2="0.5588" width="0" layer="20" curve="-90"/>
 <wire x1="-1.27" y1="-1.9812" x2="-0.635" y2="-2.6162" width="0" layer="20" curve="90"/>
 <wire x1="0.635" y1="-2.6162" x2="1.27" y2="-1.9812" width="0" layer="20" curve="90"/>
-<pad name="GND@2" x="-2.25" y="2.5" drill="1.1"/>
-<pad name="SW" x="2.25" y="2.5" drill="1.1"/>
-<pad name="GND@1" x="-3.5" y="0" drill="1.4"/>
-<pad name="GND@3" x="3.5" y="0" drill="1.4"/>
 </package>
 <package name="START_SELECT_BUTTON">
 <smd name="GND@1" x="-0.919084375" y="-3.262753125" dx="0.229771875" dy="0.229771875" layer="1" rot="R45"/>
@@ -1160,8 +1165,8 @@ Source: http://www.analog.com/static/imported-files/data_sheets/AD8541_8542_8544
 <wire x1="0.55" y1="0.8" x2="0.55" y2="-0.8" width="0.127" layer="51"/>
 </package>
 <package name="AB_BUTTON">
-<circle x="6.5484875" y="2.240271875" radius="2.26325" width="0" layer="22"/>
-<circle x="-6.5484875" y="-2.240271875" radius="2.26325" width="0" layer="22"/>
+<circle x="6.5484875" y="2.240271875" radius="2.26325" width="0" layer="51"/>
+<circle x="-6.5484875" y="-2.240271875" radius="2.26325" width="0" layer="51"/>
 <polygon width="0.1524" layer="1">
 <vertex x="-7.950090625" y="-5.261765625"/>
 <vertex x="-7.122915625" y="-5.4915375"/>
@@ -1218,7 +1223,6 @@ Source: http://www.analog.com/static/imported-files/data_sheets/AD8541_8542_8544
 <smd name="GND@2" x="-4.1358875" y="-2.182828125" dx="1.14885625" dy="0.574428125" layer="1" rot="R90"/>
 <smd name="B@2" x="-5.675353125" y="0.114884375" dx="1.14885625" dy="0.574428125" layer="1" rot="R77"/>
 <smd name="GND@1" x="-7.398640625" y="-4.6873375" dx="1.14885625" dy="0.574428125" layer="1" rot="R77"/>
-<circle x="6.5484875" y="2.240271875" radius="2.26325" width="0" layer="22"/>
 <polygon width="0.1524" layer="1">
 <vertex x="5.14688125" y="-0.781221875"/>
 <vertex x="5.97405625" y="-1.01099375"/>
@@ -2970,7 +2974,8 @@ design rules under a new name.</description>
 <element name="R3" library="microbuilder" package="0603" value="0" x="76.962" y="32.258"/>
 <element name="D4" library="microbuilder" package="SOD-323" value="1N4148" x="97.028" y="65.024" rot="MR90"/>
 <element name="D5" library="microbuilder" package="SOD-323" value="1N4148" x="93.472" y="62.738" rot="MR270"/>
-<element name="C15" library="microbuilder" package="0603" value="10μF" x="100.33" y="28.448" rot="MR0"/>
+<element name="C15" library="microbuilder" package="0603" value="10μF" x="100.33" y="28.194" rot="MR0"/>
+<element name="R12" library="microbuilder" package="0603" value="0" x="63.246" y="51.308" rot="R180"/>
 </elements>
 <signals>
 <signal name="GND">
@@ -3153,7 +3158,6 @@ design rules under a new name.</description>
 <contactref element="R8" pad="1"/>
 <contactref element="P1" pad="10"/>
 <wire x1="57.9204" y1="32.3058" x2="57.9204" y2="32.293740625" width="0.254" layer="1"/>
-<contactref element="P1" pad="47"/>
 <wire x1="58.9758" y1="32.3058" x2="57.9204" y2="32.3058" width="0.254" layer="1"/>
 <wire x1="58.9758" y1="32.3058" x2="62.0522" y2="35.3822" width="0.254" layer="1"/>
 <via x="69.5452" y="38.4302" extent="1-16" drill="0.6" shape="square"/>
@@ -3164,8 +3168,10 @@ design rules under a new name.</description>
 <wire x1="69.5452" y1="38.4302" x2="69.5452" y2="35.3822" width="0.254" layer="1"/>
 <wire x1="69.5452" y1="38.4302" x2="69.5452" y2="50.8058" width="0.254" layer="16"/>
 <via x="69.5452" y="50.8058" extent="1-16" drill="0.6" shape="square"/>
-<wire x1="69.5452" y1="50.8058" x2="57.9204" y2="50.8058" width="0.254" layer="1"/>
 <wire x1="71.918459375" y1="35.3822" x2="72.898" y2="36.361740625" width="0.254" layer="1"/>
+<contactref element="R12" pad="1"/>
+<wire x1="69.5452" y1="50.8058" x2="64.5982" y2="50.8058" width="0.254" layer="1"/>
+<wire x1="64.5982" y1="50.8058" x2="64.096" y2="51.308" width="0.254" layer="1"/>
 </signal>
 <signal name="RT_INT">
 <contactref element="U6" pad="18"/>
@@ -3604,7 +3610,7 @@ design rules under a new name.</description>
 <wire x1="97.028" y1="66.294" x2="93.726" y2="66.294" width="0.6096" layer="16"/>
 <wire x1="93.726" y1="66.294" x2="93.472" y2="66.04" width="0.6096" layer="16"/>
 <contactref element="C15" pad="1"/>
-<wire x1="101.18" y1="28.448" x2="101.18" y2="30.0736" width="0.8128" layer="16"/>
+<wire x1="101.18" y1="28.194" x2="101.18" y2="30.0736" width="0.8128" layer="16"/>
 <wire x1="103.865" y1="30.138" x2="103.826" y2="30.099" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="N$21">
@@ -3806,6 +3812,12 @@ design rules under a new name.</description>
 <wire x1="104.902" y1="31.496" x2="103.953" y2="31.496" width="0.254" layer="16"/>
 <wire x1="103.953" y1="31.496" x2="103.826" y2="31.369" width="0.254" layer="16"/>
 <wire x1="105.4862" y1="38.9518" x2="104.56" y2="39.878" width="0.254" layer="16"/>
+</signal>
+<signal name="N$22">
+<contactref element="P1" pad="47"/>
+<contactref element="R12" pad="2"/>
+<wire x1="57.9204" y1="50.8058" x2="61.8938" y2="50.8058" width="0.254" layer="1"/>
+<wire x1="61.8938" y1="50.8058" x2="62.396" y2="51.308" width="0.254" layer="1"/>
 </signal>
 </signals>
 </board>
