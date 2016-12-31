@@ -332,7 +332,7 @@ For Saba
 <text x="130.048" y="22.606" size="1.016" layer="26" font="vector" ratio="18" rot="R90">VO2</text>
 <hole x="5.37559375" y="28.842890625" drill="2.54"/>
 <hole x="128.31159375" y="32.732265625" drill="2.54"/>
-<text x="21.59" y="49.022" size="1.6256" layer="26" font="vector" ratio="18" rot="MR0">gbaZero rev.B</text>
+<text x="21.59" y="49.022" size="1.6256" layer="26" font="vector" ratio="18" rot="MR0">gbaZero lvl.2</text>
 </plain>
 <libraries>
 <library name="adafruit">
