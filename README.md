@@ -51,7 +51,7 @@ Here's a microscope shot of the buffer and five passives that make up the filter
 The amplifier is an LM4875. That amp only does mono sound, but it can automatically switch between a speaker and a headphone jack. An earlier design had a separate analog switch IC which could handle stereo output, but was way more cumbersome. The GBA only has one speaker anyway (though headphones have two).
 
 ![20 - Audio Fixes.jpg](https://raw.githubusercontent.com/AEFeinstein/gbaZero/master/Images/Assembly/20%20-%20Audio%20Fixes.jpg)
-So about that problem, when I went to test the audio, the speaker got hot. As a colleague said "you can't hear DC," and indeed there was a DC voltage across the speaker. There are two kinds of audio line levels. Balanced audio uses equal and opposite voltages to drive a speaker. Unbalanced audio uses a varying voltage and a constant ground to drive a speaker. Headphones tend to use unbalanced line levels while speakers tend to use balanced levels. The Raspberyy Pi 3 has a headphone jack, and does in fact use unbalanced line levels. However, the amplifier I chose expects a balanced level input, and when you give it unbalanced audio, it outputs a DC current across the speaker. All that had to change was to remove the last pulldown resistor before the amplifier and let the last capacitor filter out all the DC voltage.
+So about that problem, when I went to test the audio, the speaker got hot. As a colleague said "you can't hear DC," and indeed there was a DC voltage across the speaker. There are two kinds of audio line levels. Balanced audio uses equal and opposite voltages to drive a speaker. Unbalanced audio uses a varying voltage and a constant ground to drive a speaker. Headphones tend to use unbalanced line levels while speakers tend to use balanced levels. The Raspberry Pi 3 has a headphone jack, and does in fact use unbalanced line levels. However, the amplifier I chose expects a balanced level input, and when you give it unbalanced audio, it outputs a DC current across the speaker. All that had to change was to remove the last pulldown resistor before the amplifier and let the last capacitor filter out all the DC voltage.
 
 This took me forever to figure out, and in fact the solution was proposed by a colleague who earned his name in the silkscreen for version two. Some failed debugging attempts were to power the audio circuitry with 3.3V instead of 5V (the cut and solder blob in the top left), replacing R13 with a wire, and dis/reconnecting the volume potentiometer. Gross.
 
@@ -67,8 +67,9 @@ Then I soldered it on the header. All good! This picture was taken after the dis
 
 By now, the shoulder buttons had also been soldered on. I tried to use the original buttons to have a realistic feel. The buttons were tactile switch, but the plunger was made of a flexible rubber rather than a hard plastic. Unfortunately, one of the switches would not switch at all. I don't know what this poor Gameboy went through in a prior life, but it could not have been good. We had one 90 deggree tactile switch in the office, so I bent it's pins and jammed it on the board, which worked just fine. The shoulders currently have an asymetrical feel though, which kind of drives me nuts.
 
+## It Lives!
 ![21 - Doom.jpg](https://raw.githubusercontent.com/AEFeinstein/gbaZero/master/Images/Assembly/21%20-%20Doom.jpg)
-At the end, everything get put in the salvaged plastic, and yes, it runs Doom! I popped off the old display lens because it was so roughed up, and the Adafruit display can hold it's own.
+At the end, everything get put in the salvaged plastic, and yes, it runs Doom! I popped off the old display lens because it was so roughed up and the Adafruit display can hold it's own.
 
 ## The Future
 ![22 - New Plastic.jpg](https://raw.githubusercontent.com/AEFeinstein/gbaZero/master/Images/Assembly/22%20-%20New%20Plastic.jpg)
