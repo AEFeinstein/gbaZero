@@ -4,7 +4,7 @@ One day I decided to buy a broken Gameboy Advance, gut it, and replace the innar
 
 Here's a little build log for the assembly portion my version of this project. The design process wasn't terribly well documented. It was mostly me sitting at my desk doing research and CAD work in Inkscape and EAGLE.
 
-![01 - Powerboost Prepped.jpg](https://raw.githubusercontent.com/AEFeinstein/gbaZero/master/Images/Assembly/00%20-%20Bare%20PCB.jpg)
+![00 - Bare PCB.png](https://raw.githubusercontent.com/AEFeinstein/gbaZero/master/Images/Assembly/00%20-%20Bare%20PCB.png)
 To get the right PCB shape, I desoldered all the parts from a sacrificial PCB and took a 600dpi scan of it. That scan was then traced in Inkscape, and the resulting SVG was imported into EAGLE using [cmonr's svg2poly ULP](https://github.com/cmonr/Eagle-ULPs).
 
 I wanted the wacky button footprints to be just like Nintendo's. I had a scan of the footprints open in an image viewer, then overlaid a transparent EAGLE window over it, using [Peek Through](http://www.lukepaynesoftware.com/projects/peek-through/), and traced out the shape using the polygon tool. It's kind of like a high tech lightbox.
