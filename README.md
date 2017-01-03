@@ -7,6 +7,7 @@ Here's a little build log for the assembly portion my version of this project. T
 ![00 - Bare PCB.png](https://raw.githubusercontent.com/AEFeinstein/gbaZero/master/Images/Assembly/00%20-%20Bare%20PCB.png)
 To get the right PCB shape, I desoldered all the parts from a sacrificial PCB and took a 600dpi scan of it. That scan was then traced in Inkscape, and the resulting SVG was imported into EAGLE using [cmonr's svg2poly ULP](https://github.com/cmonr/Eagle-ULPs).
 
+![00 - Inkscape Trace.png](https://raw.githubusercontent.com/AEFeinstein/gbaZero/master/Images/Assembly/00%20-%20Inkscape%20Trace.png)
 I wanted the wacky button footprints to be just like Nintendo's. I had a scan of the footprints open in an image viewer, then overlaid a transparent EAGLE window over it, using [Peek Through](http://www.lukepaynesoftware.com/projects/peek-through/), and traced out the shape using the polygon tool. It's kind of like a high tech lightbox.
 
 Ultimately I threw my work on the board shape and drilled holes out the window in favor of the shape from Ryzee119's project. I was almost guaranteed to mess something, and their's was already tested to be the right fit, so that seemed safer. I was also unaware of Ryzee119's project when I started all the scanning and tracing. I did keep the Nintendo-esque button footprints.
