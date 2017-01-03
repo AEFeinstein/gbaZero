@@ -111,7 +111,9 @@ The base OS is [Adafruit's version of Jessie Lite](https://learn.adafruit.com/ad
 
 [These instructions](http://stackoverflow.com/questions/33753985/raspberry-pi-auto-login-without-etc-inittab/34755133#34755133) enabled auto-login, and [these instructions](https://www.raspberrypi.org/forums/viewtopic.php?f=78&t=58233) started Emulationstation automatically.
 
-The only other hiccup was that initially there was no audio output, even though it was set to play over the "3.5mm jack" instead of HDMI. The solution? Unmute the audio. Occam's Razor hard at work.
+One hiccup was that initially there was no audio output, even though it was set to play over the "3.5mm jack" instead of HDMI. The solution? Unmute the audio. Occam's Razor hard at work.
+
+The other hiccup was a hardware failure. Every once in a while, though with increasing frequency, the Raspberry Pi wouldn't boot, but would print "mmc0: fsm 1, hsts 1" to the terminal in an infinite loop. Turns out the SD card was busted. Good thing I made a system image after tweaking the install to my liking.
 
 ## Final Thoughts
 Hardware design is hard, and not everything can be fixed in software. At least I got close enough where everything worked after some janky fixes. I'll likely have a second version of this PCB fabbed with all the fixes. If only fabricating a board was as easy as typing "make." Also, Link's Awakening DX is still awesome.
