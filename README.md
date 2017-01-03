@@ -8,7 +8,7 @@ To get the right PCB shape, I desoldered all the parts from a sacrificial PCB an
 
 I wanted the wacky button footprints to be just like Nintendo's. I had a scan of the footprints open in an image viewer, then overlaid a transparent EAGLE window over it, using [Peek Through](http://www.lukepaynesoftware.com/projects/peek-through/), and traced out the shape using the polygon tool. It's kind of like a high tech lightbox.
 
-Ultimately I threw my work out the window in favor of the shape from Ryzee119's project. I was almost guaranteed to mess some shape or drill position up, and their's was already tested to be the right fit, so that seemed safer. I was also unaware of Ryzee119's project when I started all the scanning and tracing.
+Ultimately I threw my work on the board shape and drilled holes out the window in favor of the shape from Ryzee119's project. I was almost guaranteed to mess something, and their's was already tested to be the right fit, so that seemed safer. I was also unaware of Ryzee119's project when I started all the scanning and tracing. I did keep the Nintendo-esque button footprints.
 
 ## Assembling the Hardware
 
