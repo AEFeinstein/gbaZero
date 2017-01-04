@@ -100,17 +100,14 @@ There are tons of Gameboy Advance shell replacement kits available on Amazon, so
 ![23 - Plastic Interior.jpg](https://raw.githubusercontent.com/AEFeinstein/gbaZero/master/Images/Assembly/23%20-%20Plastic%20Interior.jpg)
 The plastic has all sorts of interior supports for the cartridge and battery, but those need to be removed here.
 
-![24 - Cartridge Support Removed.jpg](https://raw.githubusercontent.com/AEFeinstein/gbaZero/master/Images/Assembly/24%20-%20Cartridge%20Support%20Removed.jpg)
+![25 - Battery Compartment Removed.jpg](https://raw.githubusercontent.com/AEFeinstein/gbaZero/master/Images/Assembly/25%20-%20Battery%20Compartment%20Removed.jpg)
 A dremel probably would have worked wonders here, but I opted to "cut" the plastic away with a soldering iron. Melted ABS fumes aren't plesant (or healthy), so this work was done under a vacuum.
 
-![25 - Battery Compartment Removed.jpg](https://raw.githubusercontent.com/AEFeinstein/gbaZero/master/Images/Assembly/25%20-%20Battery%20Compartment%20Removed.jpg)
 The battery compartment was a little trickier to remove partially because it was larger and partially because I had to remove material close to that bottom edge. I ended up applying a little too much heat and the bottom edge warped a little. It's not bad enough to prevent the shell from fitting, but you can see it from the outside if you're looking for it. Plus I know it's there. Dang.
 
-![26 - Display Adhesive.jpg](https://raw.githubusercontent.com/AEFeinstein/gbaZero/master/Images/Assembly/26%20-%20Display%20Adhesive.jpg)
-The display is held in place with the thinnest double sided foam tape I could find on Digi-Key. I finally removed the film protecting the screen before mounting, and boy does it look clearer.
-
 ![27 - Display Mounted.jpg](https://raw.githubusercontent.com/AEFeinstein/gbaZero/master/Images/Assembly/27%20-%20Display%20Mounted.jpg)
-Here's the display stuck in place. It's not easy to finagle the ribbon cable into the connector when the display is mounted, but it's possible.
+%20Display%20Adhesive.jpg)
+The display is held in place with the thinnest double sided foam tape I could find on Digi-Key. I finally removed the film protecting the screen before mounting, and boy does it look clearer. It's not easy to finagle the ribbon cable into the connector when the display is mounted, but it's doable.
 
 ![28 - Final Assembly.jpg](https://raw.githubusercontent.com/AEFeinstein/gbaZero/master/Images/Assembly/28%20-%20Final%20Assembly.jpg)
 And voila! The display lens has been installed and I'm done. What better way to celebrate than with the greatest first person shooter of all time, Chex Quest?
