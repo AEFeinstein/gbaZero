@@ -61,7 +61,7 @@ Ta-da! With a few magnet wire fixes and a new supervisor, there's an image! This
 ### Audio Circuitry
 
 ![12 - Audio Circuit.jpg](https://raw.githubusercontent.com/AEFeinstein/gbaZero/master/Images/Assembly/12%20-%20Audio%20Circuit.jpg)
-While most Raspberry Pis have audio output, the Zero does not. It's the cost to pay for a tiny $5 board. Luckily, it can still output a PWM audio signal. A little RC filtering and amplifying later, and it should be good to go. The headphone jack and volume potentiometer were new parts. I tried to use all new parts, except for the link connector and power switch. A minor annoyance, GND and 5V are swapped on the volume potentiometer, so rotating it towards max volume (according to the plastic shell) makes it quieter. 
+While most Raspberry Pis have audio output, the Zero does not. It's the cost to pay for a tiny $5 board. Luckily, it can still output a PWM audio signal. A little RC filtering and amplifying later, and it should be good to go. The headphone jack and volume potentiometer were new parts. A minor annoyance, GND and 5V are swapped on the volume potentiometer, so rotating it towards max volume (according to the plastic shell) makes it quieter. 
 
 ![13 - Audio Filter.jpg](https://raw.githubusercontent.com/AEFeinstein/gbaZero/master/Images/Assembly/13%20-%20Audio%20Filter.jpg)
 Here's a microscope shot of the buffer and five passives that make up the filter. The design was taken from the Raspberry Pi 3 schematic. Once again, there's a problem in here. More on that shortly.
