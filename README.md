@@ -1,18 +1,25 @@
 # gbaZero
 
-One day I decided to buy a broken Gameboy Advance, gut it, and replace the innards with a Raspberry Pi powered board. This style of project has been attempted before in custom plastic (see [Game Grrl](https://learn.adafruit.com/game-grrl) and it's derivitaves) and Nintendo plastic (see [Ryzee119's project](https://github.com/Ryzee119/GBA_Emulator-by-Ryzee119-) and [Game Pie Advance](http://gamepieadvance.com/)).
+One day I decided to buy a broken Gameboy Advance, gut it, and replace the innards with a Raspberry Pi powered board. This style of project has been attempted before in custom plastic (see [Game Grrl](https://learn.adafruit.com/game-grrl) and it's derivitaves) and Nintendo plastic (see [Ryzee119's project](https://github.com/Ryzee119/GBA_Emulator-by-Ryzee119-) and [Game Pie Advance](http://gamepieadvance.com/)). Here's a little build log for my version of this project.
 
-Here's a little build log for the assembly portion my version of this project. The design process wasn't terribly well documented. It was mostly me sitting at my desk doing research and CAD work in Inkscape and EAGLE.
+## Design
 
-To get the right PCB shape, I desoldered all the parts from a sacrificial PCB and took a 600dpi scan of it. That scan was then traced in Inkscape, and the resulting SVG was imported into EAGLE using [cmonr's svg2poly ULP](https://github.com/cmonr/Eagle-ULPs).
+The design process was mostly me sitting at my desk doing research and CAD work in Inkscape and EAGLE.
 
-I wanted the wacky button footprints to be just like Nintendo's. I had a scan of the footprints open in an image viewer, then overlaid a transparent EAGLE window over it, using [Peek Through](http://www.lukepaynesoftware.com/projects/peek-through/), and traced out the shape using the polygon tool. It's kind of like a high tech lightbox.
+![00 - Bare PCB.png](https://raw.githubusercontent.com/AEFeinstein/gbaZero/master/Images/Assembly/00%20-%20Bare%20PCB.png)
+To get the right PCB shape, I desoldered all the parts from a sacrificial PCB and took a 600dpi scan of it.
+
+![00 - Inkscape Trace.png](https://raw.githubusercontent.com/AEFeinstein/gbaZero/master/Images/Assembly/00%20-%20Inkscape%20Trace.png)
+That scan was then traced in Inkscape, and the resulting SVG was imported into EAGLE using [cmonr's svg2poly ULP](https://github.com/cmonr/Eagle-ULPs).
+
+I wanted the wacky button footprints to be just like Nintendo's. I had a scan of the footprints open in an image viewer, overlaid an EAGLE window made transparent by [Peek Through](http://www.lukepaynesoftware.com/projects/peek-through/), and traced out the shape using the polygon tool. It's kind of like a high tech lightbox.
 
 Ultimately I threw my work on the board shape and drilled holes out the window in favor of the shape from Ryzee119's project. I was almost guaranteed to mess something, and their's was already tested to be the right fit, so that seemed safer. I was also unaware of Ryzee119's project when I started all the scanning and tracing. I did keep the Nintendo-esque button footprints.
 
 ## Assembling the Hardware
 
 ### Power Circuitry
+
 ![01 - Powerboost Prepped.jpg](https://raw.githubusercontent.com/AEFeinstein/gbaZero/master/Images/Assembly/01%20-%20Powerboost%20Prepped.jpg)
 It turns out using someone else's work is often easier than doing it yourself. In this case, I used a [PowerBoost 1000C](https://www.adafruit.com/products/2465) to manage charging the battery and supplying power for this board. It's a capable little board, so all I had to do was desolder the JST battery connector to trim the height and cover the backside with electrical tape because it will sit flush on the main board.
 
@@ -33,6 +40,7 @@ Ta-da! The LED works and is in the right place for the light pipe. It may be a l
 Also of note, the board uses the original Link Cable connector and a custom cable for charging. The Raspberry Pi's RX and TX pins are also exposed on the Link Cable connector, so with an FTDI cable one can log into a terminal and fiddle around with the system. This ended up being way more convenient than SSHing into the system over wifi.
 
 ### Display Circuitry
+
 ![08 - Display Circuit.jpg](https://raw.githubusercontent.com/AEFeinstein/gbaZero/master/Images/Assembly/08%20-%20Display%20Circuit.jpg)
 Remember that part about using someone else's work? I'll call it standing on the shoulders of giants. Turns out Adafruit sells a [2.8" Raspberry Pi display](https://www.adafruit.com/products/2423) which fits pretty perfectly in a GBA. I took the [circuitry from their board](https://github.com/adafruit/Adafruit-PiTFT-Plus-2.8-PCB) and transposed it onto mine. Should work perfectly, right? Yeah, we'll get to that.
 
@@ -51,6 +59,7 @@ There was another issue with the display circuitry that prevented an image from 
 Ta-da! With a few magnet wire fixes and a new supervisor, there's an image! This testing and debugging was done after all the parts were soldered, so these images aren't quite in chronological order. It would be hard to display anything without the Raspberry Pi.
 
 ### Audio Circuitry
+
 ![12 - Audio Circuit.jpg](https://raw.githubusercontent.com/AEFeinstein/gbaZero/master/Images/Assembly/12%20-%20Audio%20Circuit.jpg)
 While most Raspberry Pis have audio output, the Zero does not. It's the cost to pay for a tiny $5 board. Luckily, it can still output a PWM audio signal. A little RC filtering and amplifying later, and it should be good to go. The headphone jack and volume potentiometer were new parts. I tried to use all new parts, except for the link connector and power switch.
 
@@ -66,6 +75,7 @@ So about that problem, when I went to test the audio, the speaker got hot. As a 
 This took me forever to figure out, and in fact the solution was proposed by a colleague who earned his name in the silkscreen for version two. Some failed debugging attempts were to power the audio circuitry with 3.3V instead of 5V (the cut and solder blob in the top left), replacing R13 with a wire, and dis/reconnecting the volume potentiometer. Gross.
 
 ### Raspberry Pi Zero
+
 ![15 - SMD RPi Connector.jpg](https://raw.githubusercontent.com/AEFeinstein/gbaZero/master/Images/Assembly/15%20-%20SMD%20RPi%20Connector.jpg)
 Soldering on the Raspberry Pi proved to be the one part of this project that went as expected. First I soldered on a 40 pin SMD connector.
 
@@ -78,14 +88,17 @@ Then I soldered it on the header. All good! This picture was taken after the dis
 By now, the shoulder buttons had also been soldered on. I tried to use the original buttons to have a realistic feel. The buttons were tactile switch, but the plunger was made of a flexible rubber rather than a hard plastic. Unfortunately, one of the switches would not switch at all. I don't know what this poor Gameboy went through in a prior life, but it could not have been good. We had one 90 deggree tactile switch in the office, so I bent it's pins and jammed it on the board, which worked just fine. The shoulders currently have an asymetrical feel though, which kind of drives me nuts.
 
 ### It Lives!
+
 ![21 - Doom.jpg](https://raw.githubusercontent.com/AEFeinstein/gbaZero/master/Images/Assembly/21%20-%20Doom.jpg)
 At the end, everything get put in the salvaged plastic, and yes, it runs Doom! I popped off the old display lens because it was so roughed up and the Adafruit display can hold it's own.
 
 ### The Future
+
 ![22 - New Plastic.jpg](https://raw.githubusercontent.com/AEFeinstein/gbaZero/master/Images/Assembly/22%20-%20New%20Plastic.jpg)
 Eventually I'll move the guts into some brand new plastic. There are tons of Gameboy Advance shell replacement kits available on Amazon.
 
 ## The Software
+
 Software doesn't get pretty pictures, sorry.
 
 I connected a USB wifi dongle to the Raspberry Pi using a USB OTG cable and configured with [these instructions](http://weworkweplay.com/play/automatically-connect-a-raspberry-pi-to-a-wifi-network/). I only used wifi during configuration.
@@ -98,7 +111,9 @@ The base OS is [Adafruit's version of Jessie Lite](https://learn.adafruit.com/ad
 
 [These instructions](http://stackoverflow.com/questions/33753985/raspberry-pi-auto-login-without-etc-inittab/34755133#34755133) enabled auto-login, and [these instructions](https://www.raspberrypi.org/forums/viewtopic.php?f=78&t=58233) started Emulationstation automatically.
 
-The only other hiccup was that initially there was no audio output, even though it was set to play over the "3.5mm jack" instead of HDMI. The solution? Unmute the audio. Occam's Razor hard at work.
+One hiccup was that initially there was no audio output, even though it was set to play over the "3.5mm jack" instead of HDMI. The solution? Unmute the audio. Occam's Razor hard at work.
+
+The other hiccup was a hardware failure. Every once in a while, though with increasing frequency, the Raspberry Pi wouldn't boot, but would print "mmc0: fsm 1, hsts 1" to the terminal in an infinite loop. Turns out the SD card was busted. Good thing I made a system image after tweaking the install to my liking.
 
 ## Final Thoughts
 Hardware design is hard, and not everything can be fixed in software. At least I got close enough where everything worked after some janky fixes. I'll likely have a second version of this PCB fabbed with all the fixes. If only fabricating a board was as easy as typing "make." Also, Link's Awakening DX is still awesome.
