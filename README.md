@@ -1,6 +1,6 @@
 # gbaZero
 
-One day I decided to buy a broken Gameboy Advance, gut it, and replace the innards with a Raspberry Pi powered board. This style of project has been attempted before in custom plastic (see [Game Grrl](https://learn.adafruit.com/game-grrl) and it's derivitaves) and Nintendo plastic (see [Ryzee119's project](https://github.com/Ryzee119/GBA_Emulator-by-Ryzee119-) and [Game Pie Advance](http://gamepieadvance.com/)). Here's a little build log for my version of this project.
+One day I decided to buy a broken Gameboy Advance, gut it, and replace the innards with a Raspberry Pi powered board. This style of project has been attempted before in custom plastic (see [Game Grrl](https://learn.adafruit.com/game-grrl) and its derivitaves) and Nintendo plastic (see [Ryzee119's project](https://github.com/Ryzee119/GBA_Emulator-by-Ryzee119-) and [Game Pie Advance](http://gamepieadvance.com/)). Here's a little build log for my version of this project.
 
 ## Design
 
