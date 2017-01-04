@@ -103,10 +103,9 @@ The plastic has all sorts of interior supports for the cartridge and battery, bu
 ![25 - Battery Compartment Removed.jpg](https://raw.githubusercontent.com/AEFeinstein/gbaZero/master/Images/Assembly/25%20-%20Battery%20Compartment%20Removed.jpg)
 A dremel probably would have worked wonders here, but I opted to "cut" the plastic away with a soldering iron. Melted ABS fumes aren't plesant (or healthy), so this work was done under a vacuum.
 
-The battery compartment was a little trickier to remove partially because it was larger and partially because I had to remove material close to that bottom edge. I ended up applying a little too much heat and the bottom edge warped a little. It's not bad enough to prevent the shell from fitting, but you can see it from the outside if you're looking for it. Plus I know it's there. Dang.
+The battery compartment was a little trickier to remove partially because it was larger and partially because I had to remove material close to that bottom edge. I ended up applying a little too much heat and the bottom edge warped a bit. It's not bad enough to prevent the shell from fitting, but you can see it from the outside if you're looking for it. Plus I know it's there. Dang.
 
 ![27 - Display Mounted.jpg](https://raw.githubusercontent.com/AEFeinstein/gbaZero/master/Images/Assembly/27%20-%20Display%20Mounted.jpg)
-%20Display%20Adhesive.jpg)
 The display is held in place with the thinnest double sided foam tape I could find on Digi-Key. I finally removed the film protecting the screen before mounting, and boy does it look clearer. It's not easy to finagle the ribbon cable into the connector when the display is mounted, but it's doable.
 
 ![28 - Final Assembly.jpg](https://raw.githubusercontent.com/AEFeinstein/gbaZero/master/Images/Assembly/28%20-%20Final%20Assembly.jpg)
