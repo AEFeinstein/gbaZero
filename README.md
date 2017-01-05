@@ -1,6 +1,6 @@
 # gbaZero
 
-One day I decided to buy a broken Gameboy Advance, gut it, and replace the innards with a Raspberry Pi powered board. This style of project has been attempted before in custom plastic (see [Game Grrl](https://learn.adafruit.com/game-grrl) and it's derivitaves) and Nintendo plastic (see [Ryzee119's project](https://github.com/Ryzee119/GBA_Emulator-by-Ryzee119-) and [Game Pie Advance](http://gamepieadvance.com/)). Here's a little build log for my version of this project.
+One day I decided to buy a broken Gameboy Advance, gut it, and replace the innards with a Raspberry Pi powered board. This style of project has been attempted before in custom plastic (see [Game Grrl](https://learn.adafruit.com/game-grrl) and its derivitaves) and Nintendo plastic (see [Ryzee119's project](https://github.com/Ryzee119/GBA_Emulator-by-Ryzee119-) and [Game Pie Advance](http://gamepieadvance.com/)). Here's a little build log for my version of this project.
 
 ## Design
 
@@ -61,7 +61,7 @@ Ta-da! With a few magnet wire fixes and a new supervisor, there's an image! This
 ### Audio Circuitry
 
 ![12 - Audio Circuit.jpg](https://raw.githubusercontent.com/AEFeinstein/gbaZero/master/Images/Assembly/12%20-%20Audio%20Circuit.jpg)
-While most Raspberry Pis have audio output, the Zero does not. It's the cost to pay for a tiny $5 board. Luckily, it can still output a PWM audio signal. A little RC filtering and amplifying later, and it should be good to go. The headphone jack and volume potentiometer were new parts. I tried to use all new parts, except for the link connector and power switch.
+While most Raspberry Pis have audio output, the Zero does not. It's the cost to pay for a tiny $5 board. Luckily, it can still output a PWM audio signal. A little RC filtering and amplifying later, and it should be good to go. The headphone jack and volume potentiometer were new parts. A minor annoyance, GND and 5V are swapped on the volume potentiometer, so rotating it towards max volume (according to the plastic shell) makes it quieter. 
 
 ![13 - Audio Filter.jpg](https://raw.githubusercontent.com/AEFeinstein/gbaZero/master/Images/Assembly/13%20-%20Audio%20Filter.jpg)
 Here's a microscope shot of the buffer and five passives that make up the filter. The design was taken from the Raspberry Pi 3 schematic. Once again, there's a problem in here. More on that shortly.
@@ -70,9 +70,9 @@ Here's a microscope shot of the buffer and five passives that make up the filter
 The amplifier is an LM4875. That amp only does mono sound, but it can automatically switch between a speaker and a headphone jack. An earlier design had a separate analog switch IC which could handle stereo output, but was way more cumbersome. The GBA only has one speaker anyway (though headphones have two).
 
 ![20 - Audio Fixes.jpg](https://raw.githubusercontent.com/AEFeinstein/gbaZero/master/Images/Assembly/20%20-%20Audio%20Fixes.jpg)
-So about that problem, when I went to test the audio, the speaker got hot. As a colleague said "you can't hear DC," and indeed there was a DC voltage across the speaker. There are two kinds of audio line levels. Balanced audio uses equal and opposite voltages to drive a speaker. Unbalanced audio uses a varying voltage and a constant ground to drive a speaker. Headphones tend to use unbalanced line levels while speakers tend to use balanced levels. The Raspberry Pi 3 has a headphone jack, and does in fact use unbalanced line levels. However, the amplifier I chose expects a balanced level input, and when you give it unbalanced audio, it outputs a DC current across the speaker. All that had to change was to remove the last pulldown resistor before the amplifier and let the last capacitor filter out all the DC voltage.
+So about that problem, when I went to test the audio, the speaker got hot. As a colleague said "you can't hear DC," and indeed there was an unexpected DC voltage across the speaker. The [Raspberry Pi 3 schematic](https://www.raspberrypi.org/documentation/hardware/raspberrypi/schematics/RPI-3B-V1_2-SCHEMATIC-REDUCED.pdf) I copied the audio circuitry from had a pulldown resistor right before the audio jack. This is great for headphones or speakers or what-have-you, but terrible for amplifier input. In fact, the [LM4875 datasheet](http://www.ti.com/lit/ds/symlink/lm4875.pdf) says to put a 0.22uF capacitor in line with the input signal to get rid of incoming DC voltage, which I did not do. All that had to change was to remove the last pulldown resistor before the amplifier and let the last capacitor filter out all the DC voltage. You can see R12 hanging off into nowhere, just so I wouldn't lose it.
 
-This took me forever to figure out, and in fact the solution was proposed by a colleague who earned his name in the silkscreen for version two. Some failed debugging attempts were to power the audio circuitry with 3.3V instead of 5V (the cut and solder blob in the top left), replacing R13 with a wire, and dis/reconnecting the volume potentiometer. Gross.
+This took me forever to figure out, and in fact the solution was proposed by a colleague who earned his name in the silkscreen for version two. Some failed debugging attempts were powering the audio circuitry with 3.3V instead of 5V (the cut and solder blob in the top left), replacing R13 with a wire, dis/reconnecting the volume potentiometer, and changing bypass capacitor values (C7 is two stacked capacitors in the picture above). Gross.
 
 ### Raspberry Pi Zero
 
@@ -92,10 +92,24 @@ By now, the shoulder buttons had also been soldered on. I tried to use the origi
 ![21 - Doom.jpg](https://raw.githubusercontent.com/AEFeinstein/gbaZero/master/Images/Assembly/21%20-%20Doom.jpg)
 At the end, everything get put in the salvaged plastic, and yes, it runs Doom! I popped off the old display lens because it was so roughed up and the Adafruit display can hold it's own.
 
-### The Future
+### The Plastic
 
 ![22 - New Plastic.jpg](https://raw.githubusercontent.com/AEFeinstein/gbaZero/master/Images/Assembly/22%20-%20New%20Plastic.jpg)
-Eventually I'll move the guts into some brand new plastic. There are tons of Gameboy Advance shell replacement kits available on Amazon.
+There are tons of Gameboy Advance shell replacement kits available on Amazon, so it seemed right to replace the scarred purple shell. I went with yellow because my first Gameboy, a Color, was yellow. Thanks Mom & Dad!
+
+![23 - Plastic Interior.jpg](https://raw.githubusercontent.com/AEFeinstein/gbaZero/master/Images/Assembly/23%20-%20Plastic%20Interior.jpg)
+The plastic has all sorts of interior supports for the cartridge and battery, but those need to be removed here.
+
+![25 - Battery Compartment Removed.jpg](https://raw.githubusercontent.com/AEFeinstein/gbaZero/master/Images/Assembly/25%20-%20Battery%20Compartment%20Removed.jpg)
+A dremel probably would have worked wonders here, but I opted to "cut" the plastic away with a soldering iron. Melted ABS fumes aren't plesant (or healthy), so this work was done under a vacuum.
+
+The battery compartment was a little trickier to remove partially because it was larger and partially because I had to remove material close to that bottom edge. I ended up applying a little too much heat and the bottom edge warped a bit. It's not bad enough to prevent the shell from fitting, but you can see it from the outside if you're looking for it. Plus I know it's there. Dang.
+
+![27 - Display Mounted.jpg](https://raw.githubusercontent.com/AEFeinstein/gbaZero/master/Images/Assembly/27%20-%20Display%20Mounted.jpg)
+The display is held in place with the thinnest double sided foam tape I could find on Digi-Key. I finally removed the film protecting the screen before mounting, and boy does it look clearer. It's not easy to finagle the ribbon cable into the connector when the display is mounted, but it's doable.
+
+![28 - Final Assembly.jpg](https://raw.githubusercontent.com/AEFeinstein/gbaZero/master/Images/Assembly/28%20-%20Final%20Assembly.jpg)
+And voila! The display lens has been installed and I'm done. What better way to celebrate than with the greatest first person shooter of all time, Chex Quest?
 
 ## The Software
 
@@ -113,7 +127,7 @@ The base OS is [Adafruit's version of Jessie Lite](https://learn.adafruit.com/ad
 
 One hiccup was that initially there was no audio output, even though it was set to play over the "3.5mm jack" instead of HDMI. The solution? Unmute the audio. Occam's Razor hard at work.
 
-The other hiccup was a hardware failure. Every once in a while, though with increasing frequency, the Raspberry Pi wouldn't boot, but would print "mmc0: fsm 1, hsts 1" to the terminal in an infinite loop. Turns out the SD card was busted. Good thing I made a system image after tweaking the install to my liking.
+The other hiccup was a hardware failure. Every once in a while, though with increasing frequency, the Raspberry Pi wouldn't boot, but would print "mmc0: fsm 1, hsts 1" to the terminal in an infinite loop. Turns out the SD card was busted and had to be replaced. Good thing I made a system image after tweaking the install to my liking.
 
 ## Final Thoughts
 Hardware design is hard, and not everything can be fixed in software. At least I got close enough where everything worked after some janky fixes. I'll likely have a second version of this PCB fabbed with all the fixes. If only fabricating a board was as easy as typing "make." Also, Link's Awakening DX is still awesome.
