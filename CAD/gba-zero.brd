@@ -324,8 +324,8 @@ Mech help from
 For Saba
   Thanks for the
   calipers</text>
-<text x="130.048" y="26.67" size="1.016" layer="26" font="vector" ratio="18" rot="R90">VO1</text>
-<text x="130.048" y="22.606" size="1.016" layer="26" font="vector" ratio="18" rot="R90">VO2</text>
+<text x="128.778" y="26.67" size="1.016" layer="26" font="vector" ratio="18" rot="MR90">VO1</text>
+<text x="128.778" y="22.606" size="1.016" layer="26" font="vector" ratio="18" rot="MR90">VO2</text>
 <hole x="5.37559375" y="28.842890625" drill="2.54"/>
 <hole x="128.20999375" y="32.554465625" drill="2.54"/>
 <text x="21.59" y="49.022" size="1.6256" layer="26" font="vector" ratio="18" rot="MR0">gbaZero lvl.2</text>
