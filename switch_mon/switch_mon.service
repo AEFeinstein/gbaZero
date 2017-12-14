@@ -1,0 +1,11 @@
+[Unit]
+Description=Power Switch Monitor
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/opt/switch_mon/switch_mon
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
