@@ -101,7 +101,7 @@ There are tons of Gameboy Advance shell replacement kits available on Amazon, so
 The plastic has all sorts of interior supports for the cartridge and battery, but those need to be removed here.
 
 ![25 - Battery Compartment Removed.jpg](https://raw.githubusercontent.com/AEFeinstein/gbaZero/master/Images/Assembly/25%20-%20Battery%20Compartment%20Removed.jpg)
-A dremel probably would have worked wonders here, but I opted to "cut" the plastic away with a soldering iron. Melted ABS fumes aren't plesant (or healthy), so this work was done under a vacuum.
+A dremel probably would have worked wonders here, but I opted to "cut" the plastic away with a soldering iron. Melted ABS fumes aren't pleasant (or healthy), so this work was done under a vacuum.
 
 The battery compartment was a little trickier to remove partially because it was larger and partially because I had to remove material close to that bottom edge. I ended up applying a little too much heat and the bottom edge warped a bit. It's not bad enough to prevent the shell from fitting, but you can see it from the outside if you're looking for it. Plus I know it's there. Dang.
 
@@ -110,6 +110,22 @@ The display is held in place with the thinnest double sided foam tape I could fi
 
 ![28 - Final Assembly.jpg](https://raw.githubusercontent.com/AEFeinstein/gbaZero/master/Images/Assembly/28%20-%20Final%20Assembly.jpg)
 And voila! The display lens has been installed and I'm done. What better way to celebrate than with the greatest first person shooter of all time, Chex Quest?
+
+### PCB v2
+
+I wasn't really happy with the IC pad size for the power LED logic, or the asymmetrical shoulder buttons, or the fix wires for the display, and I wanted to try out Seeed Studio's PCB Assembly service, so I recruited a few friends to defray the cost for a batch of 10 PCBs fixed the layout, and had them built. Seeed Studio couldn't assemble the whole board, but it was quite nice not having to solder everything. Here it is in all its glory.
+
+![29 - PCB v2 Bottom.jpg](https://raw.githubusercontent.com/AEFeinstein/gbaZero/master/Images/Assembly/29%20-%20PCB%20v2%20Bottom.jpg)
+![30 - PCB v2 Top.jpg](https://raw.githubusercontent.com/AEFeinstein/gbaZero/master/Images/Assembly/30%20-%20PCB%20v2%20Top.jpg)
+
+But of course there was something still broken (hardware is hard). Even though the power LED's logic gates are still powered when the unit is off but charging, the LED itself is not. Nothing a wire couldn't fix. This one I'll have to live with.
+![32 - Power LED Fix.png](https://raw.githubusercontent.com/AEFeinstein/gbaZero/master/Images/Assembly/32%20-%20Power%20LED%20Fix.png)
+
+I noticed some odd behaviour when trying to turn on and off the gbaZero v2 PCB as well. After a little investigation, it turns out that the original GBA power "switch" was actually a linear potentiometer. Seriously Nintendo? It kind of works as a switch, but not always, which is why I hadn't noticed until now. I'm not planning on a v3, so I scoured Digi-Key for a switch with the same footprint and [managed to find one](https://www.digikey.com/product-detail/en/nidec-copal-electronics/CSS-1310TB/563-1095-1-ND/1124228). The actuator dimensions were slightly off, so I had to 3D print a new piece. Works like a charm!
+![33 - New Switch.jpg](https://raw.githubusercontent.com/AEFeinstein/gbaZero/master/Images/Assembly/33%20-%20New%20Switch.jpg)
+
+At the very end of the project, the Wind Fish is saved! I found that deeply satisfying.
+![34 - Wind Fish.jpg](https://raw.githubusercontent.com/AEFeinstein/gbaZero/master/Images/Assembly/34%20-%20Wind%20Fish.jpg)
 
 ## The Software
 
@@ -130,4 +146,4 @@ One hiccup was that initially there was no audio output, even though it was set 
 The other hiccup was a hardware failure. Every once in a while, though with increasing frequency, the Raspberry Pi wouldn't boot, but would print "mmc0: fsm 1, hsts 1" to the terminal in an infinite loop. Turns out the SD card was busted and had to be replaced. Good thing I made a system image after tweaking the install to my liking.
 
 ## Final Thoughts
-Hardware design is hard, and not everything can be fixed in software. At least I got close enough where everything worked after some janky fixes. I'll likely have a second version of this PCB fabbed with all the fixes. If only fabricating a board was as easy as typing "make." Also, Link's Awakening DX is still awesome.
+Hardware design is hard, and not everything can be fixed in software. Most of the janky fixes from the v1 PCB were fixed in the v2 one, but it's still not perfect. If only fabricating a board was as easy as typing "make." Also, Link's Awakening DX is still awesome.
